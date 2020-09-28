@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:clickable="true"
+    android:foreground="@drawable/custom_bg"
+    app:cardBackgroundColor="@color/colorPrimaryDark"
+    app:cardCornerRadius="@dimen/card_CornerRadius"
+    app:cardElevation="@dimen/card_Elevation">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_accept"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wait_chek_is_in_progress"
+            android:gravity="center"
+            android:layout_margin="@dimen/dp10"
+            android:padding="@dimen/dp10"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <ProgressBar
+            android:paddingTop="@dimen/dp20"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="@dimen/dp120"
+            android:layout_height="@dimen/dp120"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:id="@+id/progress_bar"
+            android:indeterminateDrawable="@drawable/my_progress_indeterminate1"
+            android:progressDrawable="@drawable/progress" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

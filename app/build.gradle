@@ -1,0 +1,132 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.sdaemon.oakstudiotv"
+        minSdkVersion 23
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        //  multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+
+            android {
+                lintOptions {
+                    checkReleaseBuilds false
+                    // Or, if you prefer, you can continue to check for errors in release builds,
+                    // but continue the build even when errors are found:
+                    abortOnError false
+                }
+            }
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+
+        debug {
+            debuggable true
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("release-key.keystore")
+            storePassword 'passwotd'
+            keyAlias 'alias'
+            keyPassword 'password'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+dependencies {
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //  compile 'com.android.support:multidex:1.0.0'
+
+    implementation 'com.google.firebase:firebase-analytics:17.2.2'
+    implementation 'com.google.firebase:firebase-core:17.3.0'
+    implementation 'com.google.firebase:firebase-messaging:20.1.5'
+    implementation 'com.microsoft.identity.client:msal:0.1.1'
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.browser:browser:1.0.0'
+    implementation 'androidx.media:media:1.0.0'
+    implementation 'androidx.mediarouter:mediarouter:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1'
+//    implementation 'com.android.support:appcompat-v7:28.0.0-alpha1'
+    implementation 'androidx.vectordrawable:vectordrawable-animated:1.0.0'
+    implementation 'androidx.exifinterface:exifinterface:1.0.0'
+//    implementation 'com.android.support:mediarouter-v7:28.1.1'
+//    implementation 'com.android.support:appcompat-v7:28.0.0@aar'
+    implementation 'de.mrmaffen:vlc-android-sdk:2.0.6'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/pause_download.jar')
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.14.2'
+//    implementation 'com.braintreepayments.api:drop-in:3.7.1'
+    implementation 'com.braintreepayments.api:drop-in:4.4.1'
+    implementation 'com.github.anastr:speedviewlib:1.3.1'
+    // full exoplayer library
+    //mplementation 'com.google.android.exoplayer:exoplayer:2.8.2'
+    //mplementation 'com.google.android.exoplayer:exoplayer:2.9.1'
+    implementation 'com.google.android.exoplayer:exoplayer:2.9.6'
+    // Base implementation with a standard SeekBar
+    implementation 'com.github.rubensousa:previewseekbar:2.0.0'
+
+    // ExoPlayer extension that contains a TimeBar.
+    implementation 'com.github.rubensousa:previewseekbar-exoplayer:2.8.1.0'
+    api 'androidx.cardview:cardview:1.0.0'
+
+    api 'com.squareup.picasso:picasso:2.5.2'
+//    implementation 'com.github.bumptech.glide:glide:4.9.0'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0-RC0'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'androidx.annotation:annotation:1.1.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    api 'com.mikhaellopez:circularimageview:3.0.2'
+    api 'com.android.volley:volley:1.1.0'
+    api 'com.google.code.gson:gson:2.8.0'
+    api 'com.squareup.retrofit2:retrofit:2.3.0'
+    api 'com.squareup.retrofit2:converter-gson:2.3.0'
+    api 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    api 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    api 'com.squareup.okhttp3:okhttp:3.9.0'
+    implementation "com.google.android.exoplayer:extension-okhttp:2.7.2"
+
+    // implementation 'com.google.android.exoplayer:exoplayer:2.X.X'
+    //  implementation 'com.google.android.exoplayer:extension-cast:2.9.1'
+    implementation 'com.google.android.exoplayer:extension-cast:2.9.5'
+    implementation 'me.relex:circleindicator:1.2.2@aar'
+    implementation 'com.braintreepayments.api:braintree:3.6.0'
+    implementation 'com.braintreepayments.api:google-payment:3.0.1'
+//    implementation 'com.braintreepayments.api:braintree:2.10.0'
+    // Google dependencies
+    implementation 'com.google.android.gms:play-services-wallet:18.0.0'
+    implementation 'com.jcminarro:RoundKornerLayouts:0.2.0'
+
+
+    implementation 'io.card:android-sdk:5.+'
+    implementation 'androidx.paging:paging-runtime:2.0.0-beta01'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.17'
+//    implementation 'com.google.android.gms:play-services-wallet:16.0.1'
+//    compile 'com.braintreepayments.api:google-payment:3.0.2-SNAPSHOT'
+//    implementation 'com.google.android.exoplayer:exoplayer:2.7.0'
+//    implementation 'com.google.android.exoplayer:extension-cast:2.7.0'
+
+}

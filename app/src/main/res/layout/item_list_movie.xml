@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dp6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="180dp"-->
+<!--            android:background="@color/colorPrimary"-->
+<!--           app:cardCornerRadius="15dp"-->
+<!--            app:cardElevation="0dp">-->
+
+        <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:corner_radius="16dp">
+
+        <ImageView
+            android:id="@+id/movieImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:scaleType="fitXY" />
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        android:background="@drawable/banner"-->
+        </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fil" />
+
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="@dimen/dp5"
+            android:paddingRight="@dimen/dp5"
+            android:paddingBottom="@dimen/dp20"
+            android:visibility="gone"
+            style="@style/MyProgressBar"
+            android:id="@+id/progress_bar_recentlyview"
+            android:max="100"
+            android:progress="100"/>
+
+<!--        style="?android:attr/progressBarStyleHorizontal"-->
+
+
+        <TextView
+            android:id="@+id/features"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:text="@string/_4k_uhd"
+            android:textColor="@color/colorPrimary" />
+    </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+        <TextView
+            android:id="@+id/movieName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="@string/movie_name"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/movieYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="right"
+            android:paddingRight="@dimen/dp4"
+            android:singleLine="true"
+            android:text="2014"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp" />
+<!--        android:singleLine="true"-->
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible"
+        android:orientation="horizontal">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:padding="@dimen/dp3"
+               android:layout_alignParentLeft="true"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:id="@+id/movieRating"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginRight="@dimen/dp2"
+                   android:text="4.0"
+                   android:textColor="@color/yellow" />
+
+               <RatingBar
+                   android:id="@+id/ratingBar"
+                   style="@style/customRatingBar"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="5dp"
+                   android:numStars="5"
+                   android:rating="5"
+                   android:stepSize="1.0" />
+
+           </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_views"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_views"
+                android:drawablePadding="@dimen/dp3"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/dp2"
+                android:text="@string/movie_year"
+                android:textColor="@color/colorAccent" />
+
+<!--        android:padding="5dp"-->
+<!--        android:drawablePadding="6dp"-->
+    </LinearLayout>
+
+</LinearLayout>

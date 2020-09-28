@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:name="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/action_done"
+        android:orderInCategory="100"
+        android:title=""
+        android:icon="@drawable/done_1"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_english"
+        android:orderInCategory="100"
+        android:title="EN"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_tuneUp"
+        android:title=""
+        android:visible="true"
+        android:icon="@drawable/ic_tune"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_person"
+        android:title=""
+        android:visible="true"
+        android:icon="@drawable/ic_person"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_like"
+        android:orderInCategory="100"
+        android:title=""
+        android:visible="false"
+        android:icon="@drawable/ic_favorite_border"
+        app:showAsAction="always" />
+<!--    app:iconTint="#008aff"-->
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="100"
+        android:title=""
+        android:visible="false"
+        android:icon="@drawable/ic_share"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/media_route_menu_item"
+        android:title="@string/media_route_menu_title"
+        app:actionProviderClass="androidx.mediarouter.app.MediaRouteActionProvider"
+        app:showAsAction="always"
+        android:visible="true"/>
+
+
+</menu>

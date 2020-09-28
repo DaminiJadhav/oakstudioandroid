@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".activity.SelectMovieDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:text="@string/ozark"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="10dp"
+            android:text="@string/season"/>
+
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/bg_corner"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <Spinner-->
+<!--                android:id="@+id/spinner_season"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_weight="4"-->
+<!--                android:gravity="center"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:spinnerMode="dropdown" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_weight="1"-->
+<!--                android:src="@drawable/ic_keyboard_arrow_down_white_24dp" />-->
+
+<!--        </LinearLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:spinnerMode="dropdown"
+                    android:background="@color/white"
+                    android:id="@+id/spinner_season"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_down_season"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:src="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+<!--        android:textColor="@color/colorAccent"-->
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_season"
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textColor="@color/editText"
+            android:background="@drawable/bg_corner"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="10dp"
+            android:text="@string/episode"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:spinnerMode="dropdown"
+            android:prompt="@string/season_id"
+            android:background="@color/white"
+            android:id="@+id/episode_season"/>
+
+<!--        android:background="@drawable/bg_corner"-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_down_episode"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:src="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_edpisode"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:textColor="@color/editText"
+            android:background="@drawable/bg_corner"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/iv_movieImage"
+                android:scaleType="fitXY"
+                android:layout_margin="10dp"
+                android:src="@drawable/view4"/>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/play"/>
+
+<!--            <ProgressBar-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:visibility="invisible"-->
+<!--                android:id="@+id/progress_bar"/>-->
+
+
+            <VideoView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="invisible"
+                android:id="@+id/video"
+                android:layout_margin="10dp"
+                android:src="@drawable/view4"/>
+
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyleLarge"
+                android:visibility="invisible"
+                android:layout_width="@dimen/dp60"
+                android:layout_height="@dimen/dp60"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/progress"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_select"
+        android:background="@drawable/email_button"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/view_detail"
+        android:visibility="invisible"
+        android:layout_above="@+id/btn_watchNow"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_watchNow"
+        android:background="@drawable/email_button"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/watch_now"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

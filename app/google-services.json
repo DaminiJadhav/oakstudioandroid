@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "335502844287",
+    "firebase_url": "https://oakstudio-tv.firebaseio.com",
+    "project_id": "oakstudio-tv",
+    "storage_bucket": "oakstudio-tv.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335502844287:android:f5380b1333b62fdde1ba4a",
+        "android_client_info": {
+          "package_name": "com.sdaemon.oakstudiotv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335502844287-o2h81c0u30nr86bvd99nkga1b26opmsb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBC3D4f11MdmIMwvCJH9qSBr0g26MndSB0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335502844287-o2h81c0u30nr86bvd99nkga1b26opmsb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "335502844287-0nculghacv2m05o2sskq38ju38uusvlc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sdaemon.oakstudiotv"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

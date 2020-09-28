@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+    android:id="@+id/menu_refresh"
+    android:visible="false"
+    android:title="@string/menu_refresh"
+    app:showAsAction="never"/>
+
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="@string/plan_without_logout"
+        android:visible="false"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_movie"
+        android:icon="@mipmap/movie_icon"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_tv"
+        android:icon="@mipmap/tv_shows"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_recent"
+        android:icon="@mipmap/recently_icon"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_myMovies"
+        android:icon="@mipmap/my_list"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_info"
+        android:icon="@mipmap/info"
+        android:title="" />
+
+</menu>

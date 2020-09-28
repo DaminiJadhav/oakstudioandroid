@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/ll_profilephoto">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="fitXY"
+            android:id="@+id/iv_setprofile"
+            />
+
+<!--        android:scaleType="fitXY"-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:background="@color/devider_color">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="tv_user_name"-->
+<!--                android:textSize="@dimen/dp18"-->
+<!--                android:textStyle="bold"-->
+<!--                android:id="@+id/tv_user_name"/>-->
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_cancel"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_clear"/>
+
+
+<!--        </LinearLayout>-->
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center"
+android:id="@+id/ll_profilephoto">
+
+
+
+<ImageView
+    android:id="@+id/iv_setprofile"
+    android:layout_width="255dp"
+    android:layout_height="385dp"
+    android:scaleType="fitXY"
+    android:layout_centerInParent="true"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+</ImageView>
+
+<ImageView
+    android:id="@+id/iv_cancel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/iv_setprofile"
+    android:layout_alignTop="@+id/iv_setprofile"
+    android:paddingLeft="@dimen/dp15"
+    android:background="@drawable/ic_clear" />
+
+
+&lt;!&ndash;    android:layout_marginRight="-20dp"&ndash;&gt;
+&lt;!&ndash;    android:layout_marginTop="-20dp"&ndash;&gt;
+</RelativeLayout>-->

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activity.Home_WithOut_UserActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_above="@+id/bottomView"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <Button
+                       android:id="@+id/btn_basic"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/SliderDots"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginRight="10dp"
+                       android:background="@drawable/email_button"
+                       android:text="@string/watch_online"
+                       android:textColor="@color/colorAccent"/>
+
+                   <Button
+                       android:id="@+id/btn_standard"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/btn_forFree"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginRight="10dp"
+                       android:layout_marginTop="20dp"
+                       android:background="@drawable/email_button"
+                       android:text="@string/view_standard"
+                       android:visibility="gone"/>
+            <Button
+                android:id="@+id/btn_premium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_forFree"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/red"
+                android:layout_marginTop="20dp"
+                android:text="@string/watch_offline"
+                android:textColor="@color/colorAccent"/>
+
+        </LinearLayout>
+
+</RelativeLayout>

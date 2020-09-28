@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#12141E</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="emailButtonColor">#9AEB3D</color>
+    <color name="faceBookButtonColor">#3A599A</color>
+    <color name="twiterButtonColor">#52ABF0</color>
+    <color name="editText">#505053</color>
+    <color name="editText1">#FFFFFF</color>
+    <color name="red">#D93723</color>
+    <color name="yellow">#FEF400</color>
+    <color name="iconActive" tools:ignore="ReferenceType">@drawable/nav_icon_color</color>
+    <color name="buffered">#B81B50</color>
+    <color name="played">#D08560</color>
+    <color name="scrubber">#00f850</color>
+    <color name="unplayed">#D8f570</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black_text">#303030</color>
+    <color name="gray_text">#7a7a7a</color>
+    <color name="transparent">#00000000</color>
+    <color name="devider_color">#9d9d9d</color>
+    <color name="devider_color1">#9C27B0</color>
+    <color name="plan_color1">#EEA334</color>
+    <color name="plan_color2">#7E8BCC</color>
+    <color name="plan_color3">#099737</color>
+    <color name="dialog_button_color">#61CFC3</color>
+    <color name="dialog_window_color">#646161</color>
+    <color name="recently_watch">#F7705D</color>
+
+
+
+
+
+</resources>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/ll_offline"
+    >
+
+    <ImageView
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp60"
+        android:id="@+id/iv_offline"
+        android:visibility="gone" />
+
+<!--    android:src="@drawable/ic_cloud_off_black_24dp"-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp5"
+        android:textStyle="bold"
+        android:id="@+id/tv_offline"
+        android:visibility="gone"
+        android:textColor="@color/white"/>
+
+
+
+<!--    android:text="@string/you_re_offline"-->
+
+</LinearLayout>

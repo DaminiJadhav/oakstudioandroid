@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/colorPrimary"
+    tools:context=".activity.PlanSelectionActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:overScrollMode="never"/>
+
+<!--    <ScrollView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/relative"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_below="@+id/relative"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_height="match_parent"-->
+<!--        tools:ignore="NotSibling">-->
+
+<!--        ​-->
+<!--        <LinearLayout-->
+<!--            android:scrollbars="vertical"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="170dp"-->
+<!--            tools:ignore="NotSibling">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="@dimen/dp40"-->
+<!--                android:textColor="@color/black_text"-->
+<!--                android:gravity="center"-->
+<!--                android:id="@+id/tesddsd"-->
+<!--                android:text="Select your pricing plan option"/>-->
+
+<!--</LinearLayout>-->
+<!--    ​-->
+<!--    ​-->
+<!--    ​-->
+<!--    <LinearLayout-->
+<!--    android:id="@+id/check_30"-->
+<!--    android:scrollbars="vertical"-->
+<!--    android:orientation="vertical"-->
+<!--    android:gravity="center"-->
+<!--    android:background="@color/twiterButtonColor"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--        android:padding="@dimen/dp50">-->
+<!--    <TextView-->
+<!--        android:gravity="center"-->
+<!--        android:id="@+id/tv_amount1"-->
+<!--        android:textSize="@dimen/dp40"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/twiterButtonColor"-->
+<!--        android:text="$30/"></TextView>-->
+<!--    <TextView-->
+<!--        android:gravity="center"-->
+<!--        android:id="@+id/tesd1"-->
+<!--        android:textSize="@dimen/dp20"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/twiterButtonColor"-->
+<!--        android:text="for 30 days"></TextView>-->
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--    android:id="@+id/check_60"-->
+<!--    android:orientation="vertical"-->
+<!--    android:gravity="center"-->
+<!--    android:background="@color/faceBookButtonColor"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--        android:padding="@dimen/dp50">-->
+<!--    <TextView-->
+<!--        android:gravity="center"-->
+<!--        android:id="@+id/tv_amount2"-->
+<!--        android:textSize="@dimen/dp40"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/faceBookButtonColor"-->
+<!--        android:text="$60/"></TextView>-->
+<!--    <TextView-->
+<!--        android:gravity="center"-->
+<!--        android:id="@+id/tesdcda1"-->
+<!--        android:textSize="@dimen/dp20"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/faceBookButtonColor"-->
+<!--        android:text="for 60 days"></TextView>-->
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--    android:id="@+id/check_90"-->
+<!--    android:orientation="vertical"-->
+<!--    android:gravity="center"-->
+<!--    android:background="@color/twiterButtonColor"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--        android:padding="@dimen/dp50">-->
+<!--    <TextView-->
+<!--        android:gravity="center"-->
+<!--        android:id="@+id/tv_amount3"-->
+<!--        android:textSize="@dimen/dp40"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/twiterButtonColor"-->
+<!--        android:text="$90/"></TextView>-->
+<!--    <TextView-->
+<!--        android:gravity="center"-->
+<!--        android:id="@+id/tesd12"-->
+<!--        android:textSize="@dimen/dp20"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/twiterButtonColor"-->
+<!--        android:text="for 90 days"></TextView>-->
+<!--    </LinearLayout>-->
+<!--        </LinearLayout>-->
+<!--        </RelativeLayout>-->
+<!--        </ScrollView>-->
+
+
+
+</LinearLayout>

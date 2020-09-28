@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/favourite_ralativelayout"
+    tools:context=".fragment.FragmentMyFavourite">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/myFavouritetabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        app:tabIndicatorColor="@color/emailButtonColor"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@style/TabTextStyle"
+        app:tabTextColor="@color/colorAccent" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progres_favourite"
+        android:visibility="gone"/>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/tab_Favouriteviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/myFavouritetabLayout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+<!--    <include layout="@layout/offline_layout"/>-->
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/refresh_recentlyadded"-->
+<!--        android:padding="5dp"-->
+<!--        android:scrollbars="vertical"-->
+<!--        app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_recently_add"/>
+
+
+
+
+
+<!--    <pl.droidsonroids.gif.GifImageView-->
+<!--        android:layout_width="60dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:src="@drawable/gif"-->
+<!--        android:visibility="gone"-->
+<!--        android:id="@+id/loading_gifimageview"-->
+<!--        />-->
+
+<!--    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progres_recentlyadd"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/my_progress_indeterminate1"
+        android:visibility="visible"/>
+
+
+
+    <include layout="@layout/offline_layout"/>
+
+
+</FrameLayout>

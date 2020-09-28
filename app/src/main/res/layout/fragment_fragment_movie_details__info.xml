@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".fragment.FragmentMovieDetails_Info">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_season"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/season_1"
+                        android:visibility="gone"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/movie_date"
+                            android:visibility="gone"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@android:color/white"
+                            android:id="@+id/tv_date"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/episode_1"
+                            android:visibility="gone"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@android:color/white"
+                            android:id="@+id/tv_episode"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_moviefield"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/crime_drama_thriller"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="right"-->
+<!--                    android:weightSum="3">-->
+<!--                    <Button-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="45dp"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:background="@drawable/email_button"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:text="select Season" />-->
+<!--                    <ImageView-->
+<!--                        android:id="@+id/download_button"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginStart="@dimen/dp10"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:visibility="visible" />-->
+<!--                    <ProgressBar-->
+<!--                        android:id="@+id/circularProgressbar"-->
+<!--                        style="?android:attr/progressBarStyleHorizontal"-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        android:layout_weight="0.5"-->
+<!--                        android:indeterminate="false"-->
+<!--                        android:visibility="gone" />-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/download_percentage"-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        android:layout_marginLeft="-100dp"-->
+<!--                        android:layout_weight="0.5"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="25%"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="10sp"-->
+<!--                        android:visibility="gone" />-->
+<!--                </LinearLayout>-->
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_weight="2"
+                   >
+                    <Button
+                        android:layout_width="@dimen/dp10"
+                        android:layout_height="@dimen/dp30"
+                        android:layout_weight="0.5"
+                        android:id="@+id/btn_selectseason"
+                        android:text="@string/select_season"
+                        android:textSize="@dimen/dp12"
+                        android:visibility="invisible"
+                        android:layout_margin="@dimen/dp5"
+                        android:layout_gravity="center"
+                        android:background="@drawable/email_button"/>
+
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.1"
+                        android:id="@+id/iv_download"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:visibility="invisible"
+                    />
+<!--            android:background="@drawable/download_icon"         -->
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp50"
+                        android:layout_gravity="center">
+
+
+                        <ProgressBar
+                            android:id="@+id/circularProgressbar"
+                            android:layout_width="65dp"
+                            android:layout_height="70dp"
+                            android:padding="@dimen/dp3"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:indeterminate="false"
+                            android:visibility="gone"
+
+                            />
+
+
+                        <TextView
+                            android:id="@+id/download_percentage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/white"
+                            android:textSize="8sp"
+                            android:visibility="invisible"
+
+                            />
+
+
+                    </RelativeLayout>
+<!--                    <ProgressBar-->
+<!--                        android:id="@+id/circularProgressbar"-->
+<!--                        style="?android:attr/progressBarStyleHorizontal"-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_weight="0.4"-->
+<!--                        android:indeterminate="false"-->
+<!--                        android:visibility="gone"-->
+<!--                       />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/download_percentage"-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginLeft="-100dp"-->
+<!--                        android:layout_weight="0.4"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="25%"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="10sp"-->
+<!--                        android:visibility="gone"-->
+<!--                        />-->
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_rating"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@color/emailButtonColor"
+                    android:text="@string/r"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_min"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@color/emailButtonColor"
+                    android:text="@string/_113_min"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_cc"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@color/emailButtonColor"
+                    android:text="@string/cc"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_showlike"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/colorAccent"
+                android:text="@string/tv_show_likes"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_movieDescription"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorAccent"
+                android:maxLines="3"
+                android:text="@string/text"/>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/iv_movieImage"
+                    android:scaleType="fitXY"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/view4"/>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/iv_playicon"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/play"/>
+
+                <VideoView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:visibility="gone"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/video"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/view4"/>
+
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_centerInParent="true"
+                    android:indeterminateDrawable="@drawable/progress"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+<!--            <ProgressBar-->
+<!--                android:id="@+id/progress_bar"-->
+<!--                style="?android:attr/progressBarStyleLarge"-->
+<!--                android:layout_width="36dp"-->
+<!--                android:layout_height="@dimen/dp40"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:indeterminateDrawable="@drawable/progress"-->
+<!--                android:visibility="invisible"/>-->
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnWatchNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/watch_now"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/email_button"/>
+
+
+</RelativeLayout>

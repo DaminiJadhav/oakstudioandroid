@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OAKSTUDIO.TV</string>
+    <string name="facebook">FACEBOOK</string>
+    <string name="err_no_internet">No hay conexión a internet disponible</string>
+    <string name="validEmail">Ingrese un email valido</string>
+    <string name="action_settings">Configuraciones</string>
+    <string name="cancel_button">Cancelar</string>
+    <string name="save">salvar</string>
+
+
+    <string name="notification_channel_id">Notificación</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hola fragmento en blanco</string>
+    <string name="text">Carol Danvers se convierte en una de las más poderosas del universo.
+         héroes cuando la Tierra está atrapada en medio de una guerra galáctica entre
+         dos razas alienígenas</string>
+    <string name="confirmation">Verifique que el siguiente beneficiario sea el titular de la cuenta correcto para el número de cuenta bancaria proporcionado
+Se</string>
+    <string name="text_paypal">Haga clic en el botón Continuar a PayPal e inicie sesión en Paypal</string>
+    <string name="retry">Procesar de nuevo</string>
+    <string name="yes">si</string>
+    <string name="no">No</string>
+    <string name="ok">Okay</string>
+    <string name="confirm">¡Confirmar!</string>
+    <string name="network_error">No se detectó conexión a internet. Habilite la conectividad a internet.</string>
+    <string name="do_you_want_to_close_the_app">¿Quieres cerrar la aplicación?</string>
+    <string name="logout">¡Cerrar sesión!</string>
+    <string name="are_you_sure_you_want_to_logout">¿Estás seguro de que quieres cerrar sesión?</string>
+    <string name="exo_controls_previous_description">Pista anterior</string>
+    <string name="exo_controls_next_description">Siguiente pista</string>
+    <string name="exo_controls_pause_description">Pausa</string>
+    <string name="exo_controls_play_description">Tocar</string>
+    <string name="exo_controls_stop_description">Detener</string>
+    <string name="exo_controls_rewind_description">Rebobinar</string>
+    <string name="exo_controls_fastforward_description">Avance rápido</string>
+    <string name="video">Vídeo</string>
+    <string name="radio_player">Reproductor de radio</string>
+    <string name="video_player">Reproductor de video</string>
+    <string name="quality">Calidad</string>
+    <string name="Subtitle">Subtitular</string>
+    <string name="audio">Audio</string>
+    <string name="are_you_sure_you_want_to_remove_this_video">¿Estás segura de que quieres eliminar este video?</string>
+    <string name="are_you_sure_you_want_to_remove_this_recently_view_video">¿Estás seguro de que deseas eliminar este video visto recientemente?</string>
+
+    <string name="download_start_error">Error al iniciar la descarga</string>
+    <string name="download_Pdf">Descargar PDF</string>
+    <string name="download_Doc">Descargar Doc</string>
+    <string name="download_zip">Descargar Zip</string>
+    <string name="download_video">Descargar video</string>
+    <string name="download_mp3">Descargar MP3</string>
+    <string name="openFolder">Abrir carpeta descargada</string>
+    <string name="downloadStarted">Descargar Started ...</string>
+    <string name="downloadCompleted">Descarga completa…</string>
+    <string name="downloadFailed">Descarga fracasó…</string>
+    <string name="downloadAgain">Descargar de nuevo</string>
+    <string name="resume_watching">Reanudar observación</string>
+    <string name="would_you_like_to_resume_watching">¿Desea continuar viendo desde donde lo dejó en</string>
+
+    <string name="error_cleartext_not_permitted">Tráfico de texto en claro no permitido</string>
+
+    <string name="error_generic">Reproducción fallida</string>
+
+    <string name="error_unrecognized_abr_algorithm">Algoritmo ABR no reconocido</string>
+
+    <string name="error_unrecognized_stereo_mode">Modo estéreo no reconocido</string>
+
+    <string name="error_drm_not_supported">El contenido protegido no es compatible con niveles de API inferiores a 18</string>
+
+    <string name="error_drm_unsupported_scheme">Este dispositivo no es compatible con el esquema DRM requerido</string>
+
+    <string name="error_drm_unknown">Se produjo un error desconocido de DRM</string>
+
+    <string name="error_no_decoder">Este dispositivo no proporciona un decodificador para</string>
+
+    <string name="error_no_secure_decoder">Este dispositivo no proporciona un decodificador seguro para</string>
+
+    <string name="error_querying_decoders">No se pueden consultar los decodificadores de dispositivos</string>
+
+    <string name="error_instantiating_decoder">No se puede crear una instancia del decodificador</string>
+
+    <string name="unexpected_intent_action">Acción de intención inesperada</string>
+
+    <string name="error_unsupported_video">Los medios incluyen pistas de video, pero este dispositivo no puede reproducir ninguno</string>
+
+    <string name="error_unsupported_audio">Los medios incluyen pistas de audio, pero este dispositivo no puede reproducir ninguno</string>
+
+    <string name="storage_permission_denied">Se denegó el permiso para acceder al almacenamiento</string>
+
+    <string name="sample_list_load_error">No se pudo cargar una o más listas de muestra</string>
+
+    <string name="ima_not_loaded">Reproducción de muestra sin anuncios, ya que la extensión IMA no se cargó</string>
+
+
+    <string name="download_playlist_unsupported">Esta aplicación no admite la descarga de listas de reproducción</string>
+
+    <string name="download_drm_unsupported">Esta aplicación no admite la descarga de contenido protegido.</string>
+
+    <string name="download_scheme_unsupported">Esta aplicación de demostración solo admite la descarga de transmisiones http</string>
+
+    <string name="download_ads_unsupported">IMA no admite anuncios sin conexión</string>
+
+    <string name="prefer_extension_decoders">Prefiere decodificadores de extensión</string>
+
+    <string name="random_abr">Habilitar ABR aleatorio</string>
+
+    <string name="whoops">Whoops!</string>
+    <string name="validation_title">Solo necesitamos algunos detalles más:</string>
+    <string name="email_invalid">Email valido</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="password_not_match">La contraseña no coincide, verifique</string>
+    <string name="password_valid">La contraseña no coincide, verifique</string>
+    <string name="monthly">Mensual</string>
+    <string name="quartly">Trimestral</string>
+    <string name="yearly">Anual</string>
+    <string name="basic">Básica</string>
+    <string name="standard">Estándar</string>
+    <string name="premium">Prima</string>
+
+
+
+    <string name="first_and_last_name">Nombre y apellido<font color="red">*</font></string>
+    <string name="firstname">Nombre de pila <font color="red">*</font></string>
+    <string name="lastname">Apellido <font color="red">*</font></string>
+    <string name="phone">Teléfono<font color="red" align="right">*</font></string>
+    <string name="addres">Habla a <font color="red">*</font></string>
+
+
+    <!--    <html><body><p align="justify"></p></body></html>-->
+    <string name="emailid">Identificación de correo<font color="red">*</font></string>
+    <string name="message">Mensaje </string>
+    <string name="resume">Currículum <font color="red">*</font></string>
+    <string name="plan_without_logout"><font color="red">Cerrar sesión</font></string>
+
+
+    <string name="low"> <font size="30">Baja</font></string>
+    <string name="Medium"> <font size="30">Medio</font></string>
+    <string name="high"> <font size="30">Alta</font></string>
+
+    <string name="Low_descriptiom"> <font size="10">Guardará tus datos</font></string>
+    <string name="small_descriptiom"> <font size="10">Descarga más rápido y usa menos almacenamiento</font></string>
+    <string name="Medium_descriptiom"> <font size="10">Descarga más rápido y usa menos almacenamiento</font></string>
+    <string name="high_descriptiom"> <font size="10">Utiliza más almacenamiento</font></string>
+    <string name="download_error"><font size="10">Lo sentimos, este video no es compatible con el formato descargable</font></string>
+
+
+    <string name="oak_studio_career_activity">Oak Studio se compromete a atraer, retener y desarrollar a las mejores personas en la industria. También puede contactarnos en
+ <h3><b><font color="#9AEB3D">jobs@oakstudio.com</font></b></h3>o complete el formulario a continuación, incluso si actualmente no hay trabajos que coincidan con sus intereses y nos pondremos en contacto con usted.</string>
+    <string name="contact_us">Gracias por su interés en nuestros servicios. Antes de enviar un formulario de contacto, revise nuestra página de soporte donde puede encontrar rápidamente respuestas a preguntas comunes y también contáctenos a través de una sesión de chat en vivo.
+        si aún necesita comunicarse con nosotros, proporciónenos la información a continuación y nos comunicaremos con usted para analizar sus necesidades específicas.</string>
+
+    <string name="btn_retry">Procesar de nuevo</string>
+    <string name="error_msg">¡Lo siento! No se pudieron obtener películas.</string>
+    <string name="error_msg_no_internet">No conectada a internet</string>
+    <string name="error_msg_timeout">El servidor tardó demasiado en responder</string>
+    <string name="error_msg_unknown">ocurrió un error inesperado</string>
+    <string name="error_msg_download">Actualmente no hay ningún video descargado</string>
+
+
+    <string name="menu_refresh">Actualizar</string>
+    <string name="email_support">Haga clic en el botón "Contáctenos", haga su pregunta y reciba una respuesta al correo electrónico</string>
+    <!--    <string name="support_popular_answer">I forgot my Oakstudio login or password Cant sign in to Oakstudio? You can reset your password by receiving a password reset email, or by receiving a text message if you've added your phone number to your account. If you've forgotten the email address or phone number you registered with, you may be able to provide additional information online to recover your account. Reset your password by email To reset your password via email: 1. Visit oakstudio.com/loginhelp. 2. Select the option to reset your password by Email. 3. Enter your email address and select Email Me. 4. Follow the steps in the password reset email you receive. The email will typically arrive within a few minutes, and contains a link that will sign you in to oakstudio automatically. Once signed in, you'll be asked to create a new password. The link in the email is expired. • The link in the email will expire after 24 hours, so be sure to use it as soon as possible. Please note that your new password cannot be the same as your previous password. If the link in the email has expired, don't worry &#45;&#45; you can always use oakstudio.com/loginhelp to send yourself another password reset email. I sent myself the email, but never received it. 1. Check additional folders (i.e., spam, junk or promotions) and any email filters you've set up to make sure the message isn't being directed away from your email inbox. 2. If you cannot find the password reset email after checking your spam folder, try adding info@mailer.oakstudio.com to your contact list. Then send yourself a password reset email again. 3. If you still have not received the password reset email, there may be a delay with your email provider. Please wait 5 hours, then check your inbox again. The link in the email isn't working for me. 1. Delete any Oakstudio password reset emails that you might have sent to yourself. 2. Once you've deleted the emails, go to oakstudio.com/clearcookies. This will sign you out and take you back to the home page. 3. Go to oakstudio.com/loginhelp. 4. Select the option to reset your password by Email. 5. Enter your email address and select Email Me. 6. Go back to your email and follow the steps in the new Oakstudio password reset email. If you're still having trouble, use a different computer, smartphone, or tablet to access the email, then click the password reset link.</string>-->
+    <string name="support_popular_answer1">Solicite programas de TV o películas ¿Tiene un programa de TV o película que le gustaría ver en Oakstudio? ¡Cuentanos sobre eso abajo! Este formulario es el único lugar para enviar solicitudes de contenido. ¿Se pregunta por qué un programa de televisión o película estaba disponible y ahora se ha ido? Echa un vistazo ¿Por qué los programas de televisión y las películas salen de Oakstudio? ¡para más información!</string>
+    <string name="support_popular_answer2">Odiamos verte ir, pero si necesitas cancelar tu cuenta y finalizar tu membresía, todo lo que tienes que hacer es lo siguiente: • Planes de transmisión: selecciona el botón Cancelar membresía en la página de tu cuenta. • Planes de DVD (solo en EE. UU.): Seleccione cancelar su plan de DVD desde la página de su cuenta.</string>
+    <string name="support_popular_answer3">¡Seguro! Nos encantaría tenerte de vuelta, así que cuando estés listo, simplemente reinicia tu cuenta de Oakstudio desde la página de tu cuenta.</string>
+    <string name="support_popular_answer4">Oakstudio le permite habilitar o deshabilitar subtítulos, subtítulos y audio alternativo para muchos programas de TV y películas. Puede ver qué películas y programas de TV ofrecen audio y subtítulos en su idioma preferido visitando Oakstudio .com / subtitles. Las preferencias de subtítulos no se guardan al ver títulos para niños. Si descubres que tienes que desactivar tus subtítulos cada vez que intentas verlos, reproduce un título con un índice de madurez de Adolescentes o superior establecido en tu idioma de subtítulos preferido. Esto guardará su configuración para verla en el futuro. Elija su dispositivo a continuación para obtener instrucciones detalladas sobre cómo habilitar o deshabilitar estas funciones. Computadora Para habilitar o deshabilitar subtítulos o audio alternativo en Oakstudio .com: 1. Inicie sesión en Oakstudio .com. 2. Seleccione un programa de TV o película. 3. Mientras se reproduce su programa de TV o película, mueva el mouse sobre la pantalla. 4. Haga clic en el icono de diálogo. 5. Seleccione su audio preferido o las opciones de subtítulos. Dispositivos Android Los dispositivos Android que admiten Oakstudio también admiten subtítulos. Cuando vea los títulos descargados, solo podrá seleccionar los subtítulos predeterminados y las opciones de audio para su región. Si configura las preferencias de idioma en su cuenta, también puede seleccionar las opciones de subtítulos y audio correspondientes si están disponibles para ese título. Para habilitar o deshabilitar subtítulos o audio alternativo en su dispositivo Android: 1. Inicie la aplicación Oakstudio. 2. Seleccione un programa de TV o película. 3. Mientras se reproduce su programa de TV o película, toque en cualquier lugar de la pantalla. 4. Seleccione el icono de diálogo. 5. Seleccione su audio preferido o las opciones de subtítulos. 6. Toque Ok para reanudar la reproducción. 7. Los dispositivos iPhone, iPad, iPod touch iOS que admiten Oakstudio también admiten subtítulos. Cuando vea los títulos descargados, solo podrá seleccionar los subtítulos predeterminados y las opciones de audio para su región. Si configura las preferencias de idioma en su cuenta, también puede seleccionar las opciones de subtítulos y audio correspondientes si están disponibles para ese título. Para activar o desactivar los subtítulos o el audio alternativo en su iPhone, iPad o iPod touch: 1. Inicie la aplicación Oakstudio. 2. Seleccione un programa de TV o película. 3. Mientras se reproduce su programa de TV o película, toque en cualquier lugar de la pantalla. 4. Seleccione el icono de diálogo. 5. Seleccione su audio preferido o las opciones de subtítulos. 6. Toque la X para continuar mirando.</string>
+    <string name="support_popular_answer5">Los perfiles permiten que diferentes miembros de su hogar tengan su propia experiencia personalizada de Oakstudio, basada en los programas de TV y las películas que disfrutan. Puede tener hasta cinco perfiles individuales dentro de una sola cuenta de Oakstudio. Cada perfil permite su propio: • Correo electrónico (solo perfiles con todas las clasificaciones de madurez) • Preferencia de idioma • Programa de TV personalizado y sugerencias de películas • Configuración de reproducción • Nivel de madurez • Mi lista * • Calificaciones * • Lista recientemente vista (no disponible en los perfiles para niños ) Si está utilizando un dispositivo antiguo que requiere un código de activación, no podrá crear o cambiar perfiles desde el dispositivo. Para asegurarse de que puede ver desde su perfil favorito, visite el sitio web de Oakstudio, seleccione su perfil favorito y luego active el dispositivo en Oakstudio .com / Activate. Si más tarde desea cambiar los perfiles, deberá cerrar sesión en su dispositivo y activarlo nuevamente desde el perfil deseado.</string>
+    <string name="supported_device">Como suscriptor de Oakstudio, podrá transmitir su contenido favorito desde la comodidad de su propio sofá a los confines del transporte público utilizando cualquiera de nuestros dispositivos compatibles. El contenido y las funciones disponibles variarán según su plan y la versión de la aplicación compatible con su dispositivo. Centro de ayuda</string>
+    <string name="support_oakstudio">Streaming de Oakstudio Oakstudio es un servicio de transmisión que permite a nuestros miembros ver una amplia variedad de galardonados programas de televisión, películas, documentales y más en miles de dispositivos conectados a Internet. Con Oakstudio, puede disfrutar de una visualización ilimitada sin anuncios de nuestro contenido. ¡Siempre hay algo nuevo por descubrir, y se agregan más programas de TV y películas cada mes! Si ya es miembro y desea obtener más información sobre el uso de Oakstudio, visite Introducción a Oakstudio.</string>
+    <string name="support_freetrails">Actualmente no se ofrecen pruebas gratuitas en su país. Para comenzar su nueva membresía, simplemente vaya a https://oakstudio.azurewebsites.net/, elija el plan y la opción de pago que sea mejor para usted, ingrese su correo electrónico, establezca una contraseña y comience a mirar. Los miembros de Oakstudio obtienen acceso instantáneo a todo el catálogo de programas de TV y películas. Puede encontrar información sobre planes de transmisión, dispositivos y más en ¿Qué es Oakstudio? Una vez que haya comenzado su membresía con Oakstudio, puede cancelarla en cualquier momento.</string>
+    <string name="support_billing_pay">Oakstudio es un servicio de suscripción prepago que le permite ver programas de TV y películas ilimitados en todos sus dispositivos, desde computadoras portátiles hasta televisores, teléfonos y tabletas. Los miembros de Oakstudio se cobran automáticamente mensualmente en la fecha en que se registraron. Siga leyendo para obtener más información sobre los precios, métodos de pago, cargos y más de Oakstudio. Si es nuevo en Oakstudio y desea obtener más información sobre el servicio, visite Introducción a Oakstudio.</string>
+
+    <string name="blog_string"></string>Coulrophobiacs, mira hacia otro lado ahora, porque parece que Pennywise está aquí para quedarse. A medida que se acumula en una de las mayores aperturas para películas de terror en ...
+    <string name="blog_aquaman_detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occasionecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="blog_aquaman_detail1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et cuasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatug aut odit autiturit sed aut quit volittas magni dolores eos qui ratione voluptatem sequi nesciunt.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</string>
+    <string name="blog_aquaman_detail2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. esse cillum dolore eu fugiat nulla</string>
+    <string name="blog_aquaman_detail3">Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit inj voluptate velit esse cillum dolore eu fugiat nulla</string>
+
+
+    <string name="track_selection_title">Vídeo</string>
+    <string name="season_id">Elige una temporada</string>
+    <string name="no_video_download">Actualmente no hay video descargado</string>
+
+
+
+    <string name="recently_view">VISTO RECIENTEMENTE</string>
+    <string name="recently_added">RECIENTEMENTE AÑADIDO</string>
+    <string name="you_re_offline">Estás desconectado</string>
+    <string name="no_recently_view">Actualmente no veo ningún video</string>
+    <string name="no_recently_added">Actualmente no se ha agregado ningún video</string>
+    <string name="favourite_movie">No has agregado tu película favorita</string>
+    <string name="favourite_tvseries">No has agregado series de TV favoritas</string>
+    <string name="favourite_movie_series">No has añadido series de películas favoritas</string>
+
+
+    <string name="Contact_us">Contacta con nosotras</string>
+    <string name="blog">Blog</string>
+    <string name="privacy_policy">Política de privacidad</string>
+    <string name="terms_of_us">Términos de Uso</string>
+    <string name="cookie_policy">Política de cookies</string>
+    <string name="Logout">Cerrar sesión</string>
+    <string name="set">CONJUNTO</string>
+    <string name="blog_movie">Blog / Aquaman la película</string>
+    <string name="movie_name">AQUAMAN LA PELÍCULA</string>
+    <string name="actor_name">Charlene Jensen</string>
+    <string name="blog_date">10/05/2018 3:45 PM</string>
+    <string name="blog_questions">Podría ser la más húmeda de todos los superhéroes.</string>
+    <string name="blog_recently_update">ACTUALIZACIONES RECIENTES</string>
+    <string name="blog_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</string>
+    <string name="blog_description1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</string>
+    <string name="blog_des1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</string>
+    <string name="blog_questi2">¿CUÁL ES LA FECHA DE LANZAMIENTO DE AQUAMAN THE MOVIE?</string>
+    <string name="blog_question2">¿Cuál es la trama de la nueva película de Aquaman?</string>
+    <string name="creators">Creadoras</string>
+    <string name="actors">Actores</string>
+    <string name="watch_now">VER AHORA</string>
+    <string name="speed">Velocidad</string>
+    <string name="progress">Progreso</string>
+    <string name="connection_speed">Velocidad de conexión:</string>
+    <string name="network_type">Tipo de red</string>
+    <string name="start_test">Iniciar prueba</string>
+    <string name="search_name"></string>
+    <string name="search_age">TextView2</string>
+    <string name="reviews">Comentarios</string>
+    <string name="payment_method">PMÉTODO DE PAGO</string>
+    <string name="credit_card">Tarjeta de crédito</string>
+    <string name="bank_account">Cuenta bancaria</string>
+    <string name="paypal">paypal</string>
+    <string name="genre">Género</string>
+    <string name="filter">FILTRAR</string>
+    <string name="year">Año</string>
+    <string name="review">Comentarios</string>
+    <string name="studio">Estudio</string>
+    <string name="features">Caracteristicas</string>
+    <string name="mpaa_rating">Clasificación de la MPAA</string>
+    <string name="reset">REINICIAR</string>
+    <string name="apply">APLICAR</string>
+    <string name="sign_up"> REGÍSTRATE</string>
+    <string name="email_id">Email</string>
+    <string name="passwor">Contraseña</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="country_region">País / región</string>
+    <string name="first_amp_last_name_as_shown_on_your_id">! [CDATA [Nombre y apellido (como se muestra en su ID)]]</string>
+    <string name="create_new_account">CREAR UNA NUEVA CUENTA</string>
+    <string name="monthly_price_10_99">Precio mensual $ 10.99</string>
+    <string name="your_plan">Tu plan</string>
+    <string name="basic1">BÁSICA</string>
+
+    <string name="hd_available">HD disponible</string>
+    <string name="ultra_hd_available">Ultra HD disponible</string>
+    <string name="watch_on_your_laptop_tv_phone_and_tablet">Mire en su computadora portátil, TV, teléfono y tableta</string>
+    <string name="unlimited_movies_and_tv_shows">Películas y programas de TV ilimitados.</string>
+    <string name="cancel_any_time">Cancelar en cualquier momento</string>
+    <string name="first_free">Primera libre</string>
+    <string name="quarter_price">Precio trimestral</string>
+    <string name="_5_discount">5% de descuento</string>
+    <string name="anual_price">Precio Anual</string>
+    <string name="_90_99">$90.99</string>
+    <string name="_10_discount">10% de descuento</string>
+<!--    -->
+    <string name="terms_of_use">Terms of Use</string>
+<!--    -->
+    <string name="select_plan">Seleccionar plan</string>
+    <string name="user_logout">Cerrar sesión</string>
+    <string name="welcome">BIENVENIDAS</string>
+    <string name="restart_membership">Por favor reinicie su membresía</string>
+    <string name="monthly_price">Precio mensual $ 10.99</string>
+    <string name="monthly_free_end">Precio mensual después de que finalice el mes gratis</string>
+    <string name="genre_title">GÉNERO</string>
+    <string name="splash_page_title">Lorem ipsum dolor sit amet, consectetur</string>
+    <string name="splash_page_title1">elit adipisicing, sed do eiusmod tempor</string>
+
+    <string name="account_setting">AJUSTE DE CUENTA</string>
+    <string name="payment_detail">DETALLES DEL PAGO</string>
+    <string name="balance_detail">DETALLES DE EQUILIBRIO</string>
+    <string name="Your_Plan">TU PLAN</string>
+    <string name="full_profile">Perfil completo</string>
+    <string name="please_choose_your_plan">Por favor elija su plan</string>
+    <string name="change_plan"> Cambio de plan</string>
+
+    <string name="my_movie">MI PELÍCULA</string>
+    <string name="my_tv_show">MI TV MUESTRA</string>
+    <string name="my_wishlist">MI LISTA DE DESEOS</string>
+    <string name="download">DESCARGADA</string>
+    <string name="country_code">00<font color="red" align="right">*</font></string>
+
+
+    <string name="profile_names">Hola, Veronica Brooks!</string>
+    <string name="profile_emailid">annie.webb83@example.com</string>
+    <string name="profile_place">Estados Unidos / Kansas</string>
+    <string name="complete">TERMINADA</string>
+    <string name="registration_successfully">Registro completado con éxito!</string>
+    <string name="sign_in">REGISTRARSE</string>
+    <string name="help_information">AYUDA E INFORMACIÓN</string>
+    <string name="about_us">Sobre nosotras</string>
+    <string name="support">Apoyo</string>
+    <string name="career">Carrera</string>
+    <string name="media_route_menu_title">Emitir</string>
+    <string name="free_trial_text">Para usar las funciones de la aplicación, vaya a nuestro sitio web y suscríbase a nuestro plan.</string>
+    <string name="mbps">Mb/s</string>
+    <string name="enter_amount">Ingresar cantidad</string>
+    <string name="pay_now">Pagar ahora</string>
+    <string name="chrome_cast">Chrome Cast</string>
+    <string name="sign_in_with_email">INICIAR SESIÓN CON CORREO ELECTRÓNICO</string>
+    <string name="sign_in_with_phone_number">INICIAR SESIÓN CON NÚMERO DE TELÉFONO</string>
+    <string name="sign_in_with_your_social_account">O inicie sesión con su cuenta social</string>
+    <string name="google">Google</string>
+    <string name="twitter">GORJEO</string>
+    <string name="microsoft"></string>
+    <string name="season_1">Temporada 1</string>
+    <string name="episode_1">Episodio 1</string>
+    <string name="movie_date">(21 de julio de 2017)</string>
+    <string name="crime_drama_thriller">Crimen, Drama, Suspenso</string>
+    <string name="select_season">seleccione temporada</string>
+    <string name="r">R</string>
+    <string name="_113_min">113 min</string>
+    <string name="cc">CC</string>
+    <string name="tv_show_likes">Este programa de televisión le gustó al 93% de las usuarias.</string>
+    <string name="choose_how_you_share">ELIGE CÓMO COMPARTIR</string>
+    <string name="friends_only">Solo amigas</string>
+    <string name="public_everyone">Pública (todas)</string>
+    <string name="_4k_uhd">4K UHD</string>
+    <string name="payment">3</string>
+    <string name="rupees">$10.99</string>
+    <string name="review_name">nombre</string>
+    <string name="review_date">23 de julio de 2017</string>
+    <string name="reviews_txt">revisión</string>
+    <string name="review_ratings">4.0</string>
+    <string name="edit">Editar</string>
+    <string name="search">BUSCAR</string>
+    <string name="date">Fecha</string>
+    <string name="transaction_successful">Transacción exitosa !</string>
+    <string name="transcation_login_page">serás redirigido a la página de inicio de sesión</string>
+    <string name="test_transaction_successfully_complete">Su transacción de prueba ha sido procesada con éxito.</string>
+    <string name="transaction_finished">Transacción terminada</string>
+    <string name="downloading">Descargando</string>
+    <string name="discount_amount">Importe de descuento:</string>
+    <string name="proceed_to_pay">Proceda a pagar</string>
+    <string name="description">Descripción</string>
+    <string name="android">Androide</string>
+    <string name="plan_price">$90.99</string>
+    <string name="plan_price1">$20.99</string>
+    <string name="basic_plan_price">$7.99</string>
+    <string name="monthly_price_after_free_month_ends">Precio mensual después de que finalice el mes gratis</string>
+
+    <string name="oakstudio_supported_devices">Dispositivos compatibles con Oakstudio</string>
+    <string name="support_getting_started">Empezando</string>
+    <string name="support_what_is_oakstudio">¿Qué es Oakstudio?</string>
+    <string name="about_free_trials">Acerca de las pruebas gratuitas</string>
+    <string name="support_oakstudio_billing_and_payments">Facturación y pagos de Oakstudio</string>
+    <string name="support_regarding_audio_video">Problema relacionado con audio y video</string>
+    <string name="support_contacting_quick_answer">Antes de contactar al soporte, puede encontrar rápidamente respuestas a preguntas comunes.</string>
+    <string name="support_issue">En pocas palabras, díganos cuál es su problema.</string>
+    <string name="advanced_search">BÚSQUEDA AVANZADA</string>
+    <string name="searching_process">Buscar......</string>
+    <string name="support_faq">Preguntas más frecuentes</string>
+    <string name="support_email_support">SOPORTE DE CORREO ELECTRÓNICO</string>
+    <string name="support_contact_us_by_email">CONTÁCTENOS POR CORREO ELECTRÓNICO</string>
+    <string name="featured_support_categories">CATEGORÍAS DE APOYO DESTACADAS</string>
+    <string name="disc_plus_digital">Disc Plus Digital</string>
+    <string name="support_account_management">Administración de cuentas</string>
+    <string name="support_movies_anywhere">Películas en cualquier lugar</string>
+    <string name="support_mobile_disc_to_digital">Disco móvil a digital</string>
+    <string name="billing">Facturación</string>
+    <string name="support_ultra_violet">Ultravioleta</string>
+    <string name="support_networking">Redes</string>
+    <string name="support_promotions">Promociones</string>
+
+    <string name="balance_prmotional_credits">Créditos promocionales</string>
+    <string name="balance_promotional_credit">$506.00</string>
+    <string name="balance_account_credits">Créditos de cuenta</string>
+    <string name="balance_account_credit">$0.00</string>
+    <string name="balance_oakstudio_account">Cuenta OAKSTUDIO</string>
+    <string name="balance_price">$0.99</string>
+
+    <string name="select_annual_price">Precio anual $ 90.99</string>
+    <string name="select_quarter_price_20_99">Precio por trimestre $ 20.99</string>
+    <string name="select_monthly_price_10_99">Precio mensual $ 10.99</string>
+    <string name="price">PRECIO</string>
+    <string name="splash_screen2">elit adipisicing, sed do eiusmod tempor</string>
+    <string name="splash_screen1">Lorem ipsum dolor sit amet, consectetur</string>
+    <string name="available_memory">Memoria disponible</string>
+    <string name="change_password">Cambia la contraseña</string>
+    <string name="language">Idioma</string>
+    <string name="english">Inglesa</string>
+    <string name="internal_storage">Almacenamiento interno</string>
+    <string name="account_veronika_brooks">Veronika Brooks</string>
+    <string name="account_email">annie.webb83@example.com</string>
+    <string name="account_phone">(974)-630-1470</string>
+    <string name="account_usa">Estados Unidos</string>
+    <string name="kansas">Kansas</string>
+    <string name="account_billing_address">Dirección de Envio</string>
+    <string name="account_billing_address_value">9825 East Brewery Drive, Tx 7652</string>
+    <string name="account_mailing_address">Dirección de envio</string>
+    <string name="account_mail_address">Ingresa la direccion</string>
+    <string name="account_communication_prefrences">preferencia de comunicacion</string>
+    <string name="account_share_info">Comparte mi información ...</string>
+    <string name="account_choose_how_you_share">Elige cómo compartir</string>
+        <string name="account_private">Privada</string>
+    <string name="account_log_out_now">Cerrar sesión ahora</string>
+    <string name="account_log_out_of_all_devices">Cerrar sesión de todos los dispositivos</string>
+    <string name="acount_active">ACTIVA</string>
+    <string name="test_your_network_speed">Prueba tu velocidad de red</string>
+    <string name="speed_test">PRUEBA DE VELOCIDAD</string>
+    <string name="total_payable_amount">Monto total a pagar:</string>
+    <string name="change_code">Cambiar código</string>
+    <string name="discount_amount_price">$0.0</string>
+    <string name="promo_code">Código promocional</string>
+    <string name="plan_amount">Cantidad del plan:</string>
+    <string name="payment_month">septiembre</string>
+    <string name="payment_year">2028</string>
+    <string name="payment_verify_account_bank">Intentaremos verificar al titular de la cuenta del banco</string>
+    <string name="payment_account_need_acceptance">número de cuenta proporcionado y necesitará su aceptación</string>
+    <string name="bank_name">Nombre del banco</string>
+    <string name="bank_account_number">Número de cuenta bancaria</string>
+    <string name="continue_to_paypal">CONTINUAR A PAYPAL</string>
+    <string name="attachment">Adjunto archivo</string>
+    <string name="send">Enviar</string>
+    <string name="add_a_review">Agrega una reseña</string>
+    <string name="plan_final_test">¿A qué plataforma estás apuntando? Como dije, Titanium no te permitirá exportar tu aplicación para la plataforma WP7. Luego, si necesita mejores actuaciones, busque aplicaciones Titanium / Native. Por otro lado, si desea reutilizar su código, piense en PhoneGap.</string>
+    <string name="buy_now">Compra ahora</string>
+    <string name="capital_one">Capital uno</string>
+    <string name="i_accept">ACEPTO</string>
+    <string name="choose_plan_price">$7.99</string>
+    <string name="screens_you_can_watch_on_at_the_same_time">Pantallas que puedes ver al mismo tiempo</string>
+    <string name="_20_99">$20.99</string>
+    <string name="pay">Pagar</string>
+    <string name="please_wait_transcation_is_processing">Espere, la transacción se está procesando</string>
+    <string name="choose_the_amount_to_pay">Elige el monto a pagar</string>
+    <string name="ready_for_transaction">Lista para la transacción</string>
+    <string name="continu">Seguir</string>
+    <string name="r_and_below">R y abajo</string>
+    <string name="_80_fresh">! [CDATA [> 80% fresca]]</string>
+    <string name="comedy">Comedia</string>
+    <string name="country">PAÍS</string>
+    <string name="current_plan">Plan actual...</string>
+    <string name="free_for_20_days">Gratis por 20 días.</string>
+    <string name="charges_auto_renew">Cargos de renovación automática</string>
+    <string name="select_your_plan_date">(A menos que se cancele antes de la próxima fecha de renovación)</string>
+    <string name="contact_us_page">CONTÁCTENOS</string>
+    <string name="choose_file">Elija el archivo</string>
+    <string name="linkedin_profile">Perfil de Linkedin</string>
+    <string name="skype">Skype</string>
+    <string name="episode">Episodio</string>
+    <string name="season">Temporada</string>
+    <string name="ozark">OZARK</string>
+    <string name="view_detail">Ver Detalle</string>
+    <string name="blog_it_chapter_2">IT: CAPÍTULO 2</string>
+    <string name="blog_regina_simpson">Regina Simpson</string>
+    <string name="join_for_free">ÚNETE GRATIS</string>
+    <string name="movie_year">2014</string>
+    <string name="_1_day_left">falta 1 día</string>
+    <string name="new_password">Nueva contraseña</string>
+    <string name="old_password">Contraseña anterior</string>
+    <string name="pirates_of_carabian">PIRATAS DEL CARIBE</string>
+    <string name="movie_rating">4.0</string>
+    <string name="view_count">265 568</string>
+    <string name="rate_this_tv_show">Califica este programa de TV</string>
+    <string name="your_comment">Tu comentario</string>
+    <string name="submit">Enviar</string>
+    <string name="payment_amount">Monto del pago :</string>
+    <string name="payment_id">Id de pago:</string>
+
+    <string name="contatc_us_phone_number">Teléfono: (816) -569-9813</string>
+    <string name="enter_first_name">Ingrese nombre</string>
+    <string name="enter_first_last_name">Ingrese nombre y apellido</string>
+    <string name="enter_alphabet_character">Introducir carácter alfabético</string>
+    <string name="enter_position">Introducir posición</string>
+    <string name="enter_message">Ingresar mensaje</string>
+    <string name="enter_email">Ingrese correo electrónico</string>
+    <string name="enter_valid_email_id">Ingrese una identificación de correo electrónico válida</string>
+    <string name="enter_phone_number">Ingrese una identificación de correo electrónico válida</string>
+    <string name="enter_valid_phone_number">Ingrese un número de teléfono válido</string>
+    <string name="please_select_pdf_file">Por favor seleccione el archivo pdf o doc</string>
+    <string name="field_cannot_be_empty">El campo no puede estar vacía</string>
+    <string name="enter_country_code">Ingrese el código del país</string>
+    <string name="private_just_yourself">Privada (solo tú)</string>
+    <string name="plan_name">Nombre del plan:</string>
+    <string name="please_enter_the_verification_code_send_to_your_email">Por favor ingrese el código de verificación enviar a su correo electrónico</string>
+    <string name="phone_number">Número de teléfono</string>
+    <string name="status">Estado:</string>
+    <string name="start_in">EMPEZAR EN</string>
+    <string name="hi_veronika_brooks">Hola, Veronika Brooks!</string>
+    <string name="view_standard">Ver estándar</string>
+    <string name="watch_offline">Ver sin conexión</string>
+    <string name="verification_code">Código de verificación</string>
+    <string name="grenada">Granada</string>
+    <string name="view_now">Ver ahora</string>
+    <string name="watch_online">Ver en linea</string>
+    <string name="wait_chek_is_in_progress">Espera, chek está en progreso</string>
+    <string name="your_name">Tu nombre :</string>
+
+    <string name="not_match">No pudimos encontrar coincidencias exactas para su búsqueda.</string>
+    <string name="search_again"><font color="#9AEB3D">Busca de nuevo !!!!</font></string>
+    <string name="transaction_id">ID de transacción</string>
+    <string name="transaction_failed">Lo sentimos, su transacción ha fallado</string>
+    <string name="information">INFORMACIÓN</string>
+    <string name="creator_cast">CREADORES Y REPARTO</string>
+    <string name="user_review">OPINIONES DE LOS USUARIOS</string>
+    <string name="download_status">Descargar estado</string>
+    <string name="do_you_want_to_stop_download">¿Quieres detener la descarga?</string>
+    <string name="download_option">Opción de descarga</string>
+    <string name="start_download">Comienza a descargar</string>
+    <string name="please_write_comment">Por favor escriba un comentario</string>
+    <string name="address">Habla a</string>
+    <string name="contact_email_id">Identificación de correo</string>
+    <string name="communication_preference">PREFERENCIA DE COMUNICACION</string>
+    <string name="communicat_get_notification">Obtenga una notificación cuando su artículo de la lista de deseos esté en escala</string>
+    <string name="communict_new_release">Actualización sobre nueva versión, nuevas características y más</string>
+    <string name="communict_feedback">Da tu opinión, mejora OakStudio</string>
+    <string name="communict_share_my_inf">Comparta mi información con los socios de oakstudio para que puedan informarme sobre nuevos productos y ofertas especiales.</string>
+    <string name="select_photo">Seleccionar foto de perfil</string>
+    <string name="camera">Cámara</string>
+    <string name="gallery">Galería</string>
+    <string name="remove_profile">Eliminar perfil</string>
+    <string name="company">Empresa</string>
+    <string name="check_internet_connection">Por favor verifique la conexión a internet</string>
+
+
+
+
+    <string-array name="CountryCodes">
+        <item>93,AF</item>
+        <item>355,AL</item>
+        <item>213,DZ</item>
+        <item>376,AD</item>
+        <item>244,AO</item>
+        <item>672,AQ</item>
+        <item>54,AR</item>
+        <item>374,AM</item>
+        <item>297,AW</item>
+        <item>61,AU</item>
+        <item>43,AT</item>
+        <item>994,AZ</item>
+        <item>973,BH</item>
+        <item>880,BD</item>
+        <item>375,BY</item>
+        <item>32,BE</item>
+        <item>501,BZ</item>
+        <item>229,BJ</item>
+        <item>975,BT</item>
+        <item>591,BO</item>
+        <item>387,BA</item>
+        <item>267,BW</item>
+        <item>55,BR</item>
+        <item>673,BN</item>
+        <item>359,BG</item>
+        <item>226,BF</item>
+        <item>95,MM</item>
+        <item>257,BI</item>
+        <item>855,KH</item>
+        <item>237,CM</item>
+        <item>1,CA</item>
+        <item>238,CV</item>
+        <item>236,CF</item>
+        <item>235,TD</item>
+        <item>56,CL</item>
+        <item>86,CN</item>
+        <item>61,CX</item>
+        <item>61,CC</item>
+        <item>57,CO</item>
+        <item>269,KM</item>
+        <item>242,CG</item>
+        <item>243,CD</item>
+        <item>682,CK</item>
+        <item>506,CR</item>
+        <item>385,HR</item>
+        <item>53,CU</item>
+        <item>357,CY</item>
+        <item>420,CZ</item>
+        <item>45,DK</item>
+        <item>253,DJ</item>
+        <item>670,TL</item>
+        <item>593,EC</item>
+        <item>20,EG</item>
+        <item>503,SV</item>
+        <item>240,GQ</item>
+        <item>291,ER</item>
+        <item>372,EE</item>
+        <item>251,ET</item>
+        <item>500,FK</item>
+        <item>298,FO</item>
+        <item>679,FJ</item>
+        <item>358,FI</item>
+        <item>33,FR</item>
+        <item>689,PF</item>
+        <item>241,GA</item>
+        <item>220,GM</item>
+        <item>995,GE</item>
+        <item>49,DE</item>
+        <item>233,GH</item>
+        <item>350,GI</item>
+        <item>30,GR</item>
+        <item>299,GL</item>
+        <item>502,GT</item>
+        <item>224,GN</item>
+        <item>245,GW</item>
+        <item>592,GY</item>
+        <item>509,HT</item>
+        <item>504,HN</item>
+        <item>852,HK</item>
+        <item>36,HU</item>
+        <item>91,IN</item>
+        <item>62,ID</item>
+        <item>98,IR</item>
+        <item>964,IQ</item>
+        <item>353,IE</item>
+        <item>44,IM</item>
+        <item>972,IL</item>
+        <item>39,IT</item>
+        <item>225,CI</item>
+        <item>81,JP</item>
+        <item>962,JO</item>
+        <item>7,KZ</item>
+        <item>254,KE</item>
+        <item>686,KI</item>
+        <item>965,KW</item>
+        <item>996,KG</item>
+        <item>856,LA</item>
+        <item>371,LV</item>
+        <item>961,LB</item>
+        <item>266,LS</item>
+        <item>231,LR</item>
+        <item>218,LY</item>
+        <item>423,LI</item>
+        <item>370,LT</item>
+        <item>352,LU</item>
+        <item>853,MO</item>
+        <item>389,MK</item>
+        <item>261,MG</item>
+        <item>265,MW</item>
+        <item>60,MY</item>
+        <item>960,MV</item>
+        <item>223,ML</item>
+        <item>356,MT</item>
+        <item>692,MH</item>
+        <item>222,MR</item>
+        <item>230,MU</item>
+        <item>262,YT</item>
+        <item>52,MX</item>
+        <item>691,FM</item>
+        <item>373,MD</item>
+        <item>377,MC</item>
+        <item>976,MN</item>
+        <item>382,ME</item>
+        <item>212,MA</item>
+        <item>258,MZ</item>
+        <item>264,NA</item>
+        <item>674,NR</item>
+        <item>977,NP</item>
+        <item>31,NL</item>
+        <item>599,AN</item>
+        <item>687,NC</item>
+        <item>64,NZ</item>
+        <item>505,NI</item>
+        <item>227,NE</item>
+        <item>234,NG</item>
+        <item>683,NU</item>
+        <item>850,KP</item>
+        <item>47,NO</item>
+        <item>968,OM</item>
+        <item>92,PK</item>
+        <item>680,PW</item>
+        <item>507,PA</item>
+        <item>675,PG</item>
+        <item>595,PY</item>
+        <item>51,PE</item>
+        <item>63,PH</item>
+        <item>870,PN</item>
+        <item>48,PL</item>
+        <item>351,PT</item>
+        <item>1,PR</item>
+        <item>974,QA</item>
+        <item>40,RO</item>
+        <item>7,RU</item>
+        <item>250,RW</item>
+        <item>590,BL</item>
+        <item>685,WS</item>
+        <item>378,SM</item>
+        <item>239,ST</item>
+        <item>966,SA</item>
+        <item>221,SN</item>
+        <item>381,RS</item>
+        <item>248,SC</item>
+        <item>232,SL</item>
+        <item>65,SG</item>
+        <item>421,SK</item>
+        <item>386,SI</item>
+        <item>677,SB</item>
+        <item>252,SO</item>
+        <item>27,ZA</item>
+        <item>82,KR</item>
+        <item>34,ES</item>
+        <item>94,LK</item>
+        <item>290,SH</item>
+        <item>508,PM</item>
+        <item>249,SD</item>
+        <item>597,SR</item>
+        <item>268,SZ</item>
+        <item>46,SE</item>
+        <item>41,CH</item>
+        <item>963,SY</item>
+        <item>886,TW</item>
+        <item>992,TJ</item>
+        <item>255,TZ</item>
+        <item>66,TH</item>
+        <item>228,TG</item>
+        <item>690,TK</item>
+        <item>676,TO</item>
+        <item>216,TN</item>
+        <item>90,TR</item>
+        <item>993,TM</item>
+        <item>688,TV</item>
+        <item>971,AE</item>
+        <item>256,UG</item>
+        <item>44,GB</item>
+        <item>380,UA</item>
+        <item>598,UY</item>
+        <item>1,US</item>
+        <item>998,UZ</item>
+        <item>678,VU</item>
+        <item>39,VA</item>
+        <item>58,VE</item>
+        <item>84,VN</item>
+        <item>681,WF</item>
+        <item>967,YE</item>
+        <item>260,ZM</item>
+        <item>263,ZW</item>
+    </string-array>
+</resources>

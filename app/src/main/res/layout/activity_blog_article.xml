@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activity.BlogArticleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:background="@drawable/aquaman">
+            <TextView
+                android:id="@+id/tv_aquamanmovie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp5"
+                android:text="@string/blog_movie"
+                android:textColor="@color/white" />
+            <TextView
+                android:id="@+id/tv_aquaman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_aquamanmovie"
+                android:layout_margin="@dimen/dp15"
+                android:text="@string/movie_name"
+                android:textColor="@color/white"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/ll_aquamanname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_aquaman"
+                android:layout_marginLeft="@dimen/dp15">
+                <TextView
+                    android:id="@+id/tv_director"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/fil"
+                    android:drawablePadding="@dimen/dp10"
+                    android:text="@string/actor_name"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp20"
+                    android:text="@string/blog_date"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+            <!--        <LinearLayout-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_margin="@dimen/dp15"-->
+            <!--            android:id="@+id/ll_share"-->
+            <!--            android:layout_below="@+id/ll_aquamanname">-->
+            <!--            <ImageView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:src="@drawable/ic_share"-->
+            <!--                />-->
+            <!--            <ImageView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="@dimen/dp10"-->
+            <!--                android:src="@drawable/follow_instagram"-->
+            <!--                />-->
+            <!--            <ImageView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="@dimen/dp10"-->
+            <!--                android:src="@drawable/follow_twitter"-->
+            <!--                />-->
+            <!--            <ImageView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="@dimen/dp10"-->
+            <!--                android:src="@drawable/follow_facebook"-->
+            <!--                />-->
+            <!--            <ImageView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="@dimen/dp10"-->
+            <!--                android:src="@drawable/follow_whatsapp"-->
+            <!--                />-->
+            <!--            <ImageView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="@dimen/dp10"-->
+            <!--                android:src="@drawable/follow_email"-->
+            <!--                />-->
+            <!--            <ImageView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="@dimen/dp10"-->
+            <!--                android:src="@drawable/follow_linkedin"-->
+            <!--                />-->
+            <!--        </LinearLayout>-->
+            <TextView
+                android:padding="@dimen/dp20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_aquamanname"
+                android:layout_marginLeft="@dimen/dp15"
+                android:text="@string/blog_aquaman_detail"
+                android:textColor="@color/white"
+                android:id="@+id/tv_short" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="-320dp"
+            android:text="@string/blog_questions"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/dp15"
+            android:id="@+id/tv_superheros"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/blog_aquaman_detail1"
+            android:layout_marginLeft="@dimen/dp15"
+            android:textColor="@color/white"
+            android:layout_below="@+id/tv_superheros"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blog_recently_update"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/dp15"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp15">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blog_description"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:drawablePadding="@dimen/dp10"
+                android:drawableLeft="@drawable/ic_check_circle_black_24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blog_description1"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:drawablePadding="@dimen/dp10"
+                android:drawableLeft="@drawable/ic_check_circle_black_24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="@string/blog_des1"
+                android:textColor="@color/white"
+                android:drawablePadding="@dimen/dp10"
+                android:drawableLeft="@drawable/ic_check_circle_black_24dp"/>
+        </LinearLayout>
+        <com.sdaemon.oakstudiotv.touchimageviewcls.TouchImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/blog_article_2"
+            android:layout_gravity="center"
+            android:id="@+id/iv_aquaman"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/blog_questi2"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/dp10"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/dp15"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/dp15"
+            android:text="@string/blog_aquaman_detail2"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp5"
+            android:text="@string/blog_question2"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_long"
+            android:text="@string/blog_aquaman_detail"
+            android:layout_marginLeft="@dimen/dp15"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_last"
+            android:visibility="gone"
+            android:text="@string/blog_aquaman_detail3"
+            android:layout_marginLeft="@dimen/dp15"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="320dp"-->
+<!--        android:background="@drawable/aquaman">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Blog /Aquaman the movie"-->
+<!--            android:layout_marginLeft="@dimen/dp15"-->
+<!--            android:layout_marginTop="@dimen/dp5"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:id="@+id/tv_aquamanmovie"/>-->
+
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="'AQUAMAN'\nTHE MOVIE"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_margin="@dimen/dp15"-->
+<!--            android:textSize="28dp"-->
+<!--            android:layout_below="@+id/tv_aquamanmovie"-->
+<!--            android:id="@+id/tv_aquaman"/>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/ll_aquamanname"-->
+<!--            android:layout_marginLeft="@dimen/dp15"-->
+<!--            android:layout_below="@+id/tv_aquaman">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Charlene Jensen"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:drawablePadding="@dimen/dp10"-->
+<!--                android:drawableLeft="@drawable/fil"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="10/05/2018 3:45 PM"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:paddingLeft="@dimen/dp20"/>-->
+<!--        </LinearLayout>-->
+
+<!--&lt;!&ndash;        <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_margin="@dimen/dp15"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/ll_share"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_below="@+id/ll_aquamanname">&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/ic_share"&ndash;&gt;-->
+<!--&lt;!&ndash;                />&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginLeft="@dimen/dp10"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/follow_instagram"&ndash;&gt;-->
+<!--&lt;!&ndash;                />&ndash;&gt;-->
+
+
+
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginLeft="@dimen/dp10"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/follow_twitter"&ndash;&gt;-->
+<!--&lt;!&ndash;                />&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginLeft="@dimen/dp10"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/follow_facebook"&ndash;&gt;-->
+<!--&lt;!&ndash;                />&ndash;&gt;-->
+
+
+
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginLeft="@dimen/dp10"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/follow_whatsapp"&ndash;&gt;-->
+<!--&lt;!&ndash;                />&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginLeft="@dimen/dp10"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/follow_email"&ndash;&gt;-->
+<!--&lt;!&ndash;                />&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginLeft="@dimen/dp10"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/follow_linkedin"&ndash;&gt;-->
+<!--&lt;!&ndash;                />&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;        </LinearLayout>&ndash;&gt;-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="HE MIGHT BE THE WETTEST OF ALL SUPERHEROES."-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginLeft="@dimen/dp15"-->
+<!--            android:id="@+id/tv_superheros"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_below="@+id/ll_aquamanname"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/blog_aquaman_detail"-->
+<!--            android:layout_marginLeft="@dimen/dp15"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_below="@+id/tv_superheros"/>-->
+
+
+<!--    </RelativeLayout>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/blog_aquaman_detail1"-->
+<!--        android:layout_marginLeft="@dimen/dp15"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_below="@+id/tv_superheros"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="RECENT UPDATES"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_margin="@dimen/dp15"/>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_marginLeft="@dimen/dp15">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:drawablePadding="@dimen/dp10"-->
+<!--                android:drawableLeft="@drawable/ic_check_circle_black_24dp"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:drawablePadding="@dimen/dp10"-->
+<!--                android:drawableLeft="@drawable/ic_check_circle_black_24dp"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:drawablePadding="@dimen/dp10"-->
+<!--                android:drawableLeft="@drawable/ic_check_circle_black_24dp"/>-->
+<!--        </LinearLayout>-->
+
+<!--        <com.techindiana.oakstudiotv.touchimageviewcls.TouchImageView-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:src="@drawable/blog_article_2"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:id="@+id/iv_aquaman"-->
+
+<!--            />-->
+
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="WHAT'S THE 'AQUAMAN THE MOVIE' RELEASE DATE?"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_marginBottom="@dimen/dp10"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginLeft="@dimen/dp15"-->
+<!--            android:textSize="14sp"-->
+<!--            />-->
+
+
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/dp15"-->
+<!--            android:text="@string/blog_aquaman_detail2"-->
+<!--            android:textColor="@color/white"-->
+<!--           />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/dp15"-->
+<!--            android:layout_marginBottom="@dimen/dp10"-->
+<!--            android:layout_marginTop="@dimen/dp5"-->
+<!--            android:text="WHAT'S THE PLOT OF THE NEW AQUAMAN MOVIE?"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="14sp"-->
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/blog_aquaman_detail"-->
+<!--            android:layout_marginLeft="@dimen/dp15"-->
+<!--            android:textColor="@color/white"-->
+<!--           />-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/blog_aquaman_detail3"-->
+<!--            android:layout_marginLeft="@dimen/dp15"-->
+<!--            android:textColor="@color/white"-->
+<!--            />-->
+
+<!--    </LinearLayout>-->
+
+</ScrollView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/black_text"
+    tools:context=".activity.YourPlantestActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60"
+        android:id="@+id/tv_transactionsuccess"
+        android:textStyle="bold"
+        android:textColor="@color/emailButtonColor"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:text="@string/please_choose_your_plan"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp10"
+        android:layout_gravity="center"
+        android:overScrollMode="never" />
+
+</LinearLayout>

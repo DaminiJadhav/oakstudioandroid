@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/unplayed"
+    tools:context=".activity.brainTreePayment.BrainTreeTransactionSuccess">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:textSize="@dimen/dp18"
+        android:id="@+id/tv_currentDate"
+        />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dp15"
+    >
+
+    <ImageView
+        android:layout_width="@dimen/dp120"
+        android:layout_height="@dimen/dp120"
+        android:src="@drawable/checkmark"
+        android:id="@+id/iv_transaction"
+        android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_transactionId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/dp18"
+            android:textColor="@color/black_text"
+            android:layout_marginTop="@dimen/dp10"
+            android:text=""
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_transactionsuccess"
+            android:textStyle="bold"
+            android:textColor="@color/black_text"
+            android:layout_gravity="center"
+            android:textSize="28sp"
+            android:text="@string/transaction_successful"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp6"
+            android:text="@string/transcation_login_page"/>
+
+
+        <TextView
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_transaction"
+        android:textStyle="bold" android:textColor="@color/black_text"
+        android:layout_gravity="center"
+        android:textSize="12sp"
+        android:text="@string/test_transaction_successfully_complete"/>
+
+
+
+        <Button
+
+            android:layout_marginTop="@dimen/dp25"
+            android:id="@+id/finish"
+            android:background="@color/emailButtonColor"
+            android:text="@string/transaction_finished"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            ></Button>
+
+</LinearLayout>
+</LinearLayout>

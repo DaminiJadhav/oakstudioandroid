@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:isScrollContainer="true"
+    android:nestedScrollingEnabled="true"
+    android:orientation="vertical"
+    android:transcriptMode="alwaysScroll"
+    android:scrollbars="vertical"
+    android:id="@+id/ll_careerDetail"
+    android:background="@color/colorPrimary"
+    tools:context=".activity.CareersActivity"
+    >
+
+
+
+
+    <RelativeLayout
+        android:nestedScrollingEnabled="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_career"
+    >
+        <!--android:overScrollMode="ifContentScrolls"-->
+        <!--android:scrollbarStyle="insideOverlay"-->
+        <!--android:scrollbars="vertical"-->
+      <!--  android:transcriptMode="alwaysScroll"
+        android:nestedScrollingEnabled="true"-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/career"
+        android:id="@+id/tv_career"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/dp10"
+        android:textSize="40sp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oak_studio_career_activity"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:id="@+id/tv_careerdetail"
+            android:layout_marginLeft="@dimen/dp25"
+            android:layout_below="@+id/tv_career"/>
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"
+                android:indeterminate="true"
+                android:layout_marginTop="@dimen/dp100"
+                android:layout_centerInParent="true"
+                android:id="@+id/ll_progress"
+                android:layout_below="@+id/tv_careerdetail"
+                android:indeterminateDrawable="@drawable/my_progress_indeterminate1" />
+
+
+
+        <!--   <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="fill_parent"
+           android:orientation="vertical"
+           android:layout_below="@+id/tv_careerdetail"
+           android:id="@+id/ll_expandableListView"
+           android:layout_margin="@dimen/dp10"
+               >-->
+
+
+            <ExpandableListView
+                android:id="@+id/elv_careerDetail"
+                android:layout_below="@+id/ll_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:groupIndicator="@null"
+                android:padding="@dimen/dp15"
+                android:descendantFocusability="beforeDescendants">
+                <!--android:groupIndicator="@drawable/expadablelistview_icon"-->
+<!--                android:divider="@color/black_text"-->
+<!--                android:dividerHeight="@dimen/dp3"-->
+            </ExpandableListView>
+
+
+       <!-- </LinearLayout>-->
+       <!-- <ScrollView
+            android:layout_below="@id/elv_careerDetail"
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_mainuserInformation"
+    android:layout_below="@+id/ll_expandableListView"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_userInformation"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ed_firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/bg_corner"
+            android:hint="@string/first_and_last_name"
+            android:padding="10dp"
+            android:textColor="@color/editText"
+            android:textColorHint="@color/editText" />
+
+        <EditText
+            android:id="@+id/ed_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/bg_corner"
+            android:hint="Position"
+            android:padding="10dp"
+            android:textColor="@color/editText"
+            android:textColorHint="@color/editText" />
+
+
+            &lt;!&ndash;<Spinner&ndash;&gt;
+                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                &lt;!&ndash;android:layout_height="@dimen/dp40"&ndash;&gt;
+                &lt;!&ndash;android:padding="10dp"&ndash;&gt;
+                &lt;!&ndash;android:background="@drawable/bg_corner"&ndash;&gt;
+                &lt;!&ndash;android:id="@+id/spinner_position"&ndash;&gt;
+                &lt;!&ndash;android:layout_margin="@dimen/dp10">&ndash;&gt;
+
+            &lt;!&ndash;</Spinner>&ndash;&gt;
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_corner"
+            android:hint="@string/message"
+            android:layout_margin="@dimen/dp10"
+            android:padding="10dp"
+            android:id="@+id/ed_message"
+            android:textColor="@color/editText"
+            android:textColorHint="@color/editText" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_corner"
+            android:hint="Email"
+            android:layout_margin="@dimen/dp10"
+            android:padding="10dp"
+            android:id="@+id/ed_email"
+            android:textColor="@color/editText"
+            android:textColorHint="@color/editText" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_corner"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:layout_margin="@dimen/dp10"
+            android:padding="10dp"
+            android:id="@+id/ed_phone"
+            android:textColor="@color/editText"
+            android:textColorHint="@color/editText" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_corner"
+            android:hint="Skype"
+            android:layout_margin="@dimen/dp10"
+            android:padding="10dp"
+            android:id="@+id/ed_skype"
+            android:textColor="@color/editText"
+            android:textColorHint="@color/editText" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_corner"
+            android:hint="Linkedin Profile"
+            android:layout_margin="@dimen/dp10"
+            android:padding="10dp"
+            android:id="@+id/ed_linkedinProfile"
+            android:textColor="@color/editText"
+            android:textColorHint="@color/editText" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_attachfile"
+        android:layout_below="@+id/ll_userInformation">
+
+      <Button
+        android:id="@+id/btnSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_userInformation"
+        android:text="Choose File"
+        android:padding="@dimen/dp10"
+        android:layout_margin="@dimen/dp10"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginBottom="20dp" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_corner"
+            android:singleLine="true"
+            android:hint="resume"
+            android:layout_margin="@dimen/dp10"
+            android:padding="10dp"
+            android:id="@+id/ed_file"
+            android:textColor="@color/editText"
+            android:textColorHint="@color/editText" />
+
+        &lt;!&ndash;<Button&ndash;&gt;
+            &lt;!&ndash;android:layout_width="@dimen/dp30"&ndash;&gt;
+            &lt;!&ndash;android:layout_height="@dimen/dp30"&ndash;&gt;
+            &lt;!&ndash;android:drawableRight="@drawable/ic_clear"&ndash;&gt;
+            &lt;!&ndash;android:drawablePadding="@dimen/dp30"&ndash;&gt;
+            &lt;!&ndash;android:id="@+id/btn_clear"&ndash;&gt;
+            &lt;!&ndash;android:background="@drawable/bg_corner"&ndash;&gt;
+                      &lt;!&ndash;&ndash;&gt;
+
+            />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_attachfile"
+    />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Send"
+        android:layout_margin="@dimen/dp10"
+        android:textColor="@color/black_text"
+        android:background="@color/emailButtonColor"
+        android:layout_centerInParent="true"/>
+
+
+        </LinearLayout>
+      </ScrollView>
+-->
+</RelativeLayout>
+</LinearLayout>

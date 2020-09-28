@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    tools:context=".activity.CheckInternetSpeedActivity">
+
+    <com.github.anastr.speedviewlib.SpeedView
+        app:sv_unit="@string/mbps"
+        app:sv_speedTextColor="@color/white"
+        app:sv_unitTextColor="@color/white"
+        android:id="@+id/speedView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_speedtest"
+            android:layout_margin="@dimen/dp8"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"
+            android:text="SPEED TEST"
+            android:textColor="@color/colorAccent" />
+
+
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/ll_progress"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:visibility="gone">-->
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"
+                android:indeterminate="true"
+                android:visibility="gone"
+                android:id="@+id/progress_bar"
+                android:indeterminateDrawable="@drawable/my_progress_indeterminate1"
+                android:progressDrawable="@drawable/progress" />
+<!--        </LinearLayout>-->
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

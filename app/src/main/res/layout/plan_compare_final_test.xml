@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp5"
+        android:padding="@dimen/dp5"
+        android:orientation="vertical">
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_status1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginLeft="@dimen/dp5"-->
+<!--            android:layout_marginRight="@dimen/dp5"-->
+<!--            android:paddingBottom="@dimen/dp5"-->
+<!--            android:background="@color/white"-->
+<!--            android:text="Current Plan"-->
+<!--            android:textColor="@color/black_text"-->
+<!--            android:textSize="@dimen/dp20"-->
+<!--            android:textStyle="bold"-->
+<!--            android:visibility="visible" />-->
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:textSize="@dimen/dp25"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:background="@drawable/border_white_drawable"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_white_24dp"
+            android:paddingRight="@dimen/dp18"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/basic"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_marginLeft="@dimen/dp5"-->
+<!--            android:layout_marginRight="@dimen/dp5"-->
+<!--            android:background="@color/black_text"-->
+<!--            android:paddingBottom="@dimen/dp5"></View>-->
+
+        <LinearLayout
+            android:id="@+id/sub_item"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:background="@drawable/gradient_background_color1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:textSize="@dimen/dp20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/dp20"
+            android:text="@string/plan_final_test" />
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/shopping_cart_black"
+                android:padding="@dimen/dp20"
+                android:text="@string/buy_now"
+                android:id="@+id/tv_buynow"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dp20" />
+
+
+            <!--    <ImageView-->
+<!--     android:layout_marginRight="@dimen/dp20"-->
+<!--     android:layout_weight="1"-->
+<!--     android:layout_width="0dp"-->
+<!--     android:background="@color/emailButtonColor"-->
+<!--     android:layout_height="match_parent"-->
+<!--     android:src="@drawable/shopping_cart_black">-->
+
+<!-- </ImageView>-->
+
+
+
+<!--            </LinearLayout>-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

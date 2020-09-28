@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_position"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_jobexp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_salary"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_lastdate"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_jobDescription"
+        android:text="@string/description"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"/>
+
+
+
+<!--    <ScrollView-->
+<!--        android:layout_below="@id/elv_careerDetail"-->
+<!--        android:id="@+id/scrollView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp15"
+            android:id="@+id/ll_mainuserInformation"
+            android:layout_below="@+id/ll_expandableListView"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_userInformation"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/ed_firstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:clickable="true"
+                    android:imeOptions="actionNext"
+                    android:layout_margin="@dimen/dp10"
+                    android:background="@drawable/bg_corner"
+                    android:hint="@string/first_and_last_name"
+                    android:padding="10dp"
+                    android:textColor="@color/editText"
+                    android:textColorHint="@color/editText" />
+
+                <EditText
+                    android:id="@+id/ed_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:clickable="true"
+                    android:imeOptions="actionNext"
+                    android:maxLength="10"
+                    android:layout_margin="@dimen/dp10"
+                    android:background="@drawable/bg_corner"
+                    android:hint="@string/phone"
+                    android:padding="10dp"
+                    android:textColor="@color/editText"
+                    android:textColorHint="@color/editText" />
+
+
+                <!--<Spinner-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/dp40"-->
+                <!--android:padding="10dp"-->
+                <!--android:background="@drawable/bg_corner"-->
+                <!--android:id="@+id/spinner_position"-->
+                <!--android:layout_margin="@dimen/dp10">-->
+
+                <!--</Spinner>-->
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:clickable="true"
+                    android:imeOptions="actionNext"
+                    android:background="@drawable/bg_corner"
+                    android:hint="@string/message"
+                    android:layout_margin="@dimen/dp10"
+                    android:padding="10dp"
+                    android:id="@+id/ed_message"
+                    android:textColor="@color/editText"
+                    android:textColorHint="@color/editText" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:clickable="true"
+                    android:imeOptions="actionNext"
+                    android:background="@drawable/bg_corner"
+                    android:hint="@string/emailid"
+                    android:layout_margin="@dimen/dp10"
+                    android:padding="10dp"
+                    android:id="@+id/ed_email"
+                    android:textColor="@color/editText"
+                    android:textColorHint="@color/editText" />
+
+<!--                <EditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/bg_corner"-->
+<!--                    android:hint="Phone"-->
+<!--                    android:layout_margin="@dimen/dp10"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:id="@+id/ed_phone"-->
+<!--                    android:textColor="@color/editText"-->
+<!--                    android:textColorHint="@color/editText" />-->
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:clickable="true"
+                    android:imeOptions="actionNext"
+                    android:background="@drawable/bg_corner"
+                    android:hint="@string/skype"
+                    android:layout_margin="@dimen/dp10"
+                    android:padding="10dp"
+                    android:id="@+id/ed_skype"
+                    android:textColor="@color/editText"
+                    android:textColorHint="@color/editText" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:clickable="true"
+                    android:imeOptions="actionNext"
+                    android:background="@drawable/bg_corner"
+                    android:hint="@string/linkedin_profile"
+                    android:layout_margin="@dimen/dp10"
+                    android:padding="10dp"
+                    android:id="@+id/ed_linkedinProfile"
+                    android:textColor="@color/editText"
+                    android:textColorHint="@color/editText" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_attachfile"
+                android:layout_below="@+id/ll_userInformation">
+
+                <Button
+                    android:id="@+id/btnSelectImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_userInformation"
+                    android:text="@string/choose_file"
+                    android:visibility="gone"
+                    android:padding="@dimen/dp10"
+                    android:layout_margin="@dimen/dp10"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_corner"
+                    android:layout_marginBottom="20dp" />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    android:background="@drawable/bg_corner"
+                    android:singleLine="true"
+                    android:hint="@string/resume"
+                    android:layout_margin="@dimen/dp10"
+                    android:padding="10dp"
+                    android:id="@+id/ed_file"
+                    android:textColor="@color/editText"
+                    android:textColorHint="@color/editText" />
+
+                <!--<Button-->
+                <!--android:layout_width="@dimen/dp30"-->
+                <!--android:layout_height="@dimen/dp30"-->
+                <!--android:drawableRight="@drawable/ic_clear"-->
+                <!--android:drawablePadding="@dimen/dp30"-->
+                <!--android:id="@+id/btn_clear"-->
+                <!--android:background="@drawable/bg_corner"-->
+                <!---->
+
+                />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_attachfile"
+                />
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/send"
+                android:layout_margin="@dimen/dp10"
+                android:textColor="@color/black_text"
+                android:background="@color/emailButtonColor"
+                android:layout_centerInParent="true"/>
+
+
+        </LinearLayout>
+<!--    </ScrollView>-->
+</LinearLayout>

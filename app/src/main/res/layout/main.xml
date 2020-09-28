@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/connectionspeeed"
+        android:text="@string/connection_speed"
+        android:layout_marginTop="10dip"
+        android:textColor="#FFFFFF"
+        android:textSize="16dip"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/speed"
+        android:text="@string/speed"
+        android:layout_marginTop="10dip"
+        android:textColor="#FFFFFF"
+        android:textSize="16dip"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:text="@string/progress"
+        android:layout_marginTop="10dip"
+        android:textColor="#FFFFFF"
+        android:textSize="16dip"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/networktype"
+        android:text="@string/network_type"
+        android:layout_marginTop="10dip"
+        android:textColor="#FFFFFF"
+        android:textSize="16dip"/>
+
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnStart"
+        android:text="@string/start_test"
+        android:layout_marginTop="10dip"/>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black_text"
+    tools:context=".activity.YourPlantestsActivity">
+
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh_plan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+    <RelativeLayout
+        android:id="@+id/ll_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+      >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:id="@+id/tv_chooseplan"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:textColor="@color/emailButtonColor"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:text="@string/please_choose_your_plan"/>
+
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:indeterminate="true"
+            android:id="@+id/progress_bar"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/my_progress_indeterminate1"
+            android:progressDrawable="@drawable/progress" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp10"
+        android:layout_gravity="center"
+        android:layout_below="@+id/tv_chooseplan"
+        android:overScrollMode="never" />
+
+
+    </RelativeLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <include layout="@layout/offline_layout"/>
+
+
+</FrameLayout>

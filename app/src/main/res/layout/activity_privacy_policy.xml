@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/privacy_policy"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/dp15"
+        android:textSize="40sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp15"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_policy"
+                android:scrollbars="vertical"
+                android:layout_marginTop="@dimen/dp15"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp15"
+                android:text=""/>
+
+
+
+
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleLarge"
+                    android:id="@+id/ll_progress"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp50"
+                    android:indeterminate="true"
+                    android:layout_marginTop="@dimen/dp200"
+                    android:indeterminateDrawable="@drawable/my_progress_indeterminate1"
+                    android:progressDrawable="@drawable/progress" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".activity.signIn.ForgetPass_VerificationActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:text="FORGOT PASSWORD"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:text="Enter verfication code send to your phone"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/layout_otp"
+        android:layout_width="match_parent"
+        android:layout_height="90sp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextone"
+            android:layout_width="40sp"
+            android:layout_height="42sp"
+            android:backgroundTint="@color/editText"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:nextFocusRight="@+id/editText_two">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTexttwo"
+            android:layout_width="40sp"
+            android:layout_height="42sp"
+            android:backgroundTint="@color/editText"
+            android:inputType="numberPassword"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/editTextthree"
+            android:layout_width="40sp"
+            android:layout_height="42sp"
+            android:backgroundTint="@color/editText"
+            android:inputType="numberPassword"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/editTextfour"
+            android:layout_width="40sp"
+            android:layout_height="42sp"
+            android:backgroundTint="@color/editText"
+            android:inputType="numberPassword"
+            android:maxLength="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/emailButtonColor"
+        android:text="Send verification code again"
+        android:gravity="center"
+        android:layout_marginTop="30dp"/>
+</LinearLayout>

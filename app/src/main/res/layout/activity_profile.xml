@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="10dp"
+    tools:context=".activity.ProfileActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_profileHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+
+
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:civ_border_color="#EEEEEE"
+                android:scaleType="centerCrop"
+                android:id="@+id/circular_profile_iv"
+                app:civ_shadow="true"
+                app:civ_shadow_color="#8BC34A"/>
+
+<!--            android:src="@drawable/user_profile1"-->
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_photo_camera_black_24dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp5"
+                android:background="@drawable/profile_oval_shape"
+                android:padding="@dimen/dp3"
+                android:id="@+id/iv_photo"
+                />
+
+           <!-- <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                app:civ_border_color="#EEEEEE"
+                app:civ_border_width="4dp"
+                android:id="@+id/circular_profile_iv"
+                app:civ_shadow="true"
+                app:civ_shadow_color="#8BC34A"
+                app:civ_shadow_radius="10" />
+
+&lt;!&ndash;            android:src="@drawable/view"&ndash;&gt;
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_photo"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_photo_camera"/>
+-->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.6"
+            android:layout_marginLeft="@dimen/dp10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:id="@+id/tv_name"
+                android:text="Hi,Veronica Brooks!"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:id="@+id/tv_emailid"
+                android:text="annie.webb83@example.com"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:id="@+id/tv_place"
+                android:text="USA/Kansas"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_profileHeader"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/editText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="@string/full_profile"
+            android:textSize="18dp"
+            android:textColor="@color/colorAccent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/editText" />
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llprofile"
+        android:background="@color/colorPrimary"
+        app:tabIndicatorColor="@color/emailButtonColor"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@style/TabTextStyle"
+        app:tabTextColor="@color/colorAccent" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/tab_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabLayout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</RelativeLayout>

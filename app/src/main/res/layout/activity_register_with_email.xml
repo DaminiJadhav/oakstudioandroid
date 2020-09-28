@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".activity.signUp.Register_withEmail_Activity">
+
+    <LinearLayout
+        android:id="@+id/ll_headder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:text="@string/sign_up"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/emailButtonColor"
+                tools:ignore="RtlCompat" />
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_corner"
+            android:hint="@string/email"
+            android:padding="10dp"
+            android:textColor="@color/editText"
+            android:textColorHint="@color/editText" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_corner"
+            android:hint="@string/password"
+            android:padding="10dp"
+            android:textColor="@color/editText"
+            android:textColorHint="@color/editText" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_corner"
+            android:hint="@string/confirm_password"
+            android:padding="10dp"
+            android:textColor="@color/editText"
+            android:textColorHint="@color/editText" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_corner"
+            android:hint="@string/country_region"
+            android:padding="10dp"
+            android:textColor="@color/editText"
+            android:textColorHint="@color/editText" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_corner"
+            android:hint="@string/first_amp_last_name_as_shown_on_your_id"
+            android:padding="10dp"
+            android:textColor="@color/editText"
+            android:textColorHint="@color/editText" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_createAcc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/email_button"
+        android:text="@string/create_new_account"
+        android:textColor="@android:color/black" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activity.SupportActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/support"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/dp15"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/oakstudio_supported_devices"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dp5"
+                android:textSize="18sp"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/supported_device"
+                android:paddingLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp5"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/support_getting_started"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dp5"
+                android:textSize="18sp"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/support_what_is_oakstudio"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dp5"
+                android:textSize="18sp"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/support_oakstudio"
+                android:layout_marginTop="@dimen/dp5"
+                android:paddingLeft="@dimen/dp10"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_free_trials"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dp5"
+                android:textSize="18sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/support_freetrails"
+                android:layout_marginTop="@dimen/dp5"
+                android:paddingLeft="@dimen/dp10"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/support_oakstudio_billing_and_payments"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dp5"
+                android:textSize="18sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/support_billing_pay"
+                android:paddingLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp5"
+                android:textSize="14sp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/support_regarding_audio_video"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp5"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:orientation="vertical"
+       >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp5"
+        android:visibility="gone"
+        android:text="@string/support_contacting_quick_answer"
+        android:textColor="@color/white"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/support_issue"
+            android:textColor="@color/white"
+           />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/advanced_search"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dp5"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            app:goIcon="@drawable/ic_search_black_24dp"
+            android:clickable="true"
+            android:visibility="gone"
+            app:defaultQueryHint="@string/searching_process"
+            android:layout_marginTop="@dimen/dp5"
+            android:id="@+id/searchview"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/support_faq"
+            android:layout_marginTop="@dimen/dp5"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:scrollbars="vertical"-->
+<!--        android:orientation="vertical"-->
+<!--        android:transcriptMode="alwaysScroll"-->
+<!--        android:layout_margin="@dimen/dp10"-->
+<!--        >-->
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <ExpandableListView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scrollbars="vertical"
+            android:transcriptMode="alwaysScroll"
+            android:isScrollContainer="true"
+            android:nestedScrollingEnabled="true"
+            android:descendantFocusability="beforeDescendants"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:groupIndicator="@null"
+            android:id="@+id/support_expand_listview"
+            android:divider="#9d9d9d"
+            android:dividerHeight="1dp" />
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_bar"
+            android:visibility="gone"
+            android:indeterminateDrawable="@drawable/my_progress_indeterminate1"
+            android:layout_centerInParent="true"
+            />
+
+<!--    </LinearLayout>-->
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/support_email_support"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dp5"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:text="@string/email_support"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+           />
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:textSize="10sp"
+                android:id="@+id/btn_opengmail"
+                android:background="@color/unplayed"
+                android:text="@string/support_contact_us_by_email"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/featured_support_categories"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dp5"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp5"
+                android:id="@+id/ll_support1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/disc_plus_digital"
+                    android:clickable="true"
+                    android:id="@+id/tv_disc_digital"
+                    android:textColor="@color/click_textview_change_color"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/support_account_management"
+                    android:padding="@dimen/dp5"
+                    android:clickable="true"
+                    android:id="@+id/tv_account_manag"
+                    android:textColor="@color/click_textview_change_color"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_support2"
+                android:padding="@dimen/dp5"
+                android:layout_below="@+id/ll_support1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/support_movies_anywhere"
+                    android:clickable="true"
+                    android:id="@+id/tv_movie_anywhere"
+                    android:textColor="@color/click_textview_change_color"/>
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/support_mobile_disc_to_digital"
+                    android:clickable="true"
+                    android:textColor="@color/click_textview_change_color"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_support3"
+                android:padding="@dimen/dp5"
+                android:layout_below="@+id/ll_support2">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/billing"
+                    android:clickable="true"
+                    android:textColor="@color/click_textview_change_color"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_4k_uhd"
+                    android:clickable="true"
+                    android:textColor="@color/click_textview_change_color"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_support4"
+                android:padding="@dimen/dp5"
+                android:layout_below="@+id/ll_support3">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/support_ultra_violet"
+                    android:clickable="true"
+                    android:textColor="@color/click_textview_change_color"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/support_networking"
+                    android:clickable="true"
+                    android:textColor="@color/click_textview_change_color"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_support5"
+                android:padding="@dimen/dp5"
+                android:layout_below="@+id/ll_support4">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/support_promotions"
+                android:clickable="true"
+                android:textColor="@color/click_textview_change_color"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

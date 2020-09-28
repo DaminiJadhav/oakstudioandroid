@@ -1,0 +1,132 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TabTextStyle" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps" tools:targetApi="ice_cream_sandwich">true</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/gray_text</item>
+        <item name="colorControlActivated">@color/yellow</item>
+
+    </style>
+
+    <style name="customRatingBar"
+        parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="colorControlNormal">@color/yellow</item>
+        <item name="colorControlActivated">@color/yellow</item>
+       // Additional customizations
+    </style>
+
+
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="WhiteCheck">
+        <item name="colorAccent">#9AEB3D</item>
+    </style>
+
+
+<!--    <style name="PlayerTheme" parent="android:Theme.Holo">-->
+<!--        <item name="android:windowNoTitle">true</item>-->
+<!--        <item name="android:windowBackground">@android:color/black</item>-->
+<!--    </style>-->
+
+    <style name="PlayerTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+
+
+    <style name="MaterialDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@style/MaterialDialogAnimation</item>
+    </style>
+
+    <style name="MaterialDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/zoom_in_dialog</item>
+        <item name="android:windowExitAnimation">@anim/zoom_out</item>
+    </style>
+
+    <style name="dialoge" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Color palette -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="dialogCornerRadius">4dp</item>
+<!--        <item name="android:gravity">center_horizontal</item>-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/black_text</item>
+        <item name="android:textColorSecondary">@color/devider_color</item>
+
+    </style>
+
+    <style name="download_dialog" parent="Theme.MaterialComponents.Dialog.Alert">
+     <!-- Color palette -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="dialogCornerRadius">4dp</item>
+        <!--        <item name="android:gravity">center_horizontal</item>-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/dialog_button_color</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:windowBackground">@color/dialog_window_color</item>
+
+    </style>
+
+    <style name="dialoge_search" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Color palette -->
+
+<!--        <item name="android:radius">8dp</item>-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/black_text</item>
+        <item name="android:textColorSecondary">@color/devider_color</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="TrackSelectionDialogThemeOverlay" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="windowNoTitle">false</item>
+    </style>
+
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/emailButtonColor</item>
+<!--        <item name="android:indeterminateDrawable">@drawable/progress</item>-->
+    </style>
+
+
+    <style name="MyProgressBar" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressBackgroundTint">#928D8D</item>
+        <item name="android:progressTint">#F52213</item>
+        <item name="android:minWidth">200dp</item>
+    </style>
+
+<!--    <style name="Widget.App.Spinner" parent="@style/Widget.AppCompat.Spinner">-->
+<!--        <item name="overlapAnchor">true</item>-->
+<!--        <item name="android:background">@drawable/spinner_background</item>-->
+<!--    </style>-->
+
+</resources>

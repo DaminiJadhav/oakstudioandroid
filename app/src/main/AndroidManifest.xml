@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sdaemon.oakstudiotv">
+
+    <uses-sdk tools:overrideLibrary="com.microsoft.identity.msal" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL"/> -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android:permission.android.permission.INSTALL_LOCATION_PROVIDER" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".utils.AppSubClass"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:testOnly="false"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="stateAlwaysVisible"
+        tools:ignore="HardcodedDebugMode">
+        <activity android:name=".activity.UserSelectPlanAgainActivity" />
+        <activity android:name=".activity.HelpandInfoActivity" />
+        <activity android:name=".activity.BlogArticleActivity" />
+        <activity android:name=".activity.SearchItemActivity" />
+        <activity android:name=".activity.BlogActicity" />
+        <activity android:name=".activity.SupportActivity" />
+        <activity android:name=".activity.YourPlantestsActivity" />
+        <activity android:name=".activity.PlanSelectionActivity" /> <!-- <activity android:name=".activity.YourPlantestActivity" /> -->
+        <activity android:name=".activity.brainTreePayment.BrainTreeTransactionSuccess" />
+        <activity android:name=".activity.brainTreePayment.BrainTreeActivity" />
+        <activity
+            android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="com.sdaemon.oakstudiotv.braintree" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ContactActivity" />
+        <activity android:name=".activity.CareersActivity" />
+        <activity android:name=".activity.CookiePolicyActivity" />
+        <activity android:name=".activity.TermsOfUseActivity" />
+        <activity android:name=".activity.PrivacyPolicyActivity" />
+        <activity android:name=".activity.AboutUsActivity" />
+        <activity android:name=".activity.CheckInternetSpeedActivity" /> <!-- android:vmSafeMode="true" -->
+        <!-- android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"> -->
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.signIn.Sign_inActivity" />
+        <activity android:name=".activity.ProfileActivityNew" />
+        <activity android:name=".activity.signIn.Signin_withEmail_Activity" />
+        <activity android:name=".activity.signIn.GetPass_byEmail_Activity" />
+        <activity android:name=".activity.signIn.GetPass_bySmS_Activity" />
+        <activity android:name=".activity.signIn.ForgetPass_VerificationActivity" />
+        <activity android:name=".activity.signIn.Sign_in_smsVerificationActivity" />
+        <activity android:name=".activity.signIn.SignIn_VerificationActivity" />
+        <activity android:name=".activity.Country_codeList_Activity" />
+        <activity android:name=".activity.signUp.SignUPActivity" />
+        <activity android:name=".activity.signUp.Register_withEmail_Activity" />
+        <activity android:name=".activity.signUp.SignUp_VerificationActivity" />
+        <activity android:name=".activity.Select_PaymentMethodActivity" />
+        <activity android:name=".activity.Select_PriceActivity" />
+        <activity android:name=".activity.Home_WithOut_UserActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.FilterActivity" />
+        <activity android:name=".activity.SelectLanguageActivity" />
+        <activity android:name=".activity.CommunicationPrefActivity" />
+        <activity android:name=".activity.ChooseShareActivity" />
+        <activity android:name=".activity.SelectYour_PlanActivity" />
+        <activity
+            android:name=".activity.MovieDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:excludeFromRecents="true" />
+        <activity android:name=".activity.ReviewRatingActivity" />
+        <activity android:name=".activity.SelectMovieDetailsActivity" />
+        <activity android:name=".activity.signUp.SignUp_Plan_Activity" />
+        <activity android:name=".activity.CompleteActivity" />
+        <activity android:name=".activity.StartInActivity" />
+        <activity android:name=".activity.signUp.SignUpSmS_verification_Activity" />
+        <activity android:name=".activity.GenreActivity" />
+        <activity android:name=".activity.PlanCompareActivity" />
+        <activity android:name=".activity.PlanCompareActivityLinearLayout" />
+        <activity android:name=".activity.PlanCompareActivityNew" />
+        <activity android:name=".activity.PlanCompareFinalActivity" />
+        <activity android:name=".activity.PromoCodeActivity" />
+        <activity android:name=".activity.ChromeCastActivity" /> <!-- Intent filter to capture System Browser calling back to our app after Sign In -->
+        <activity android:name="com.microsoft.identity.client.BrowserTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- Add in your scheme/host from registered redirect URI -->
+                <!--
+                     <data android:scheme="msal90c0fe63-bcf2-44d5-8fb7-b8bbc0b29dc6"
+                     android:host="auth" />
+                -->
+                <data
+                    android:host="auth"
+                    android:scheme="msal3a4452ce-c962-4925-b52e-061ff29b8f32" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.YearActivity" />
+        <activity android:name=".activity.ReviewsActivity" />
+        <activity android:name=".activity.StudioActivity" />
+        <activity android:name=".activity.FeaturesActivity" />
+        <activity android:name=".activity.MpaaRatingActivity" />
+        <activity android:name=".activity.paypal.PaypalActivity" />
+        <activity android:name=".activity.paypal.ConfirmationActivity" />
+        <activity android:name=".activity.ButtonActivity" />
+        <activity android:name=".activity.ProfileActivity" />
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.OffLineDownloadListActivity" />
+        <activity
+            android:name=".activity.Rajendra"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@style/PlayerTheme">
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer..action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="content" />
+                <data android:scheme="asset" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+            android:value="com.google.android.exoplayer2.ext.cast.DefaultCastOptionsProvider" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+        <meta-data
+            android:name="unityplayer.UnityActivity"
+            android:value="true" />
+
+        <receiver android:name=".activity.DownloadTracker$NotificationReceiver">
+            <intent-filter>
+                <action android:name="YES_ACTION" />
+            </intent-filter>
+        </receiver> <!-- <activity android:name=".activity.signUp.Videofullscreen"></activity> -->
+        <activity android:name=".activity.ChangeAccountPassActivity" />
+
+        <receiver android:name=".utils.AlertBroadcastReceiver" />
+
+        <service
+            android:name=".activity.DemoDownloadService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.downloadService.action.RESTART" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.android.exoplayer2.scheduler.PlatformScheduler$PlatformSchedulerService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".utils.MyServiceSimple"
+            android:enabled="true" />
+        <service android:name=".utils.MyService" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/notification_channel_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_back_button" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <service
+            android:name=".firebase.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
